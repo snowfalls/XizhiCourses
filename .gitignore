@@ -1,3 +1,4 @@
 *.o
 *.out
 *.i
+__pycache__
