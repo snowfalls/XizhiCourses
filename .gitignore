@@ -1,4 +1,6 @@
 *.o
 *.out
 *.i
+*.json
 __pycache__
+.gitignore
