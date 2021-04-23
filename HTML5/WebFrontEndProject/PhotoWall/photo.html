@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>多彩照片墙</title>
+	<style>
+		img{
+			width:200px;
+			border:1px solid #ddd;
+			padding:10px;
+			position:absolute;
+			background:#FFF;
+			transition:all 2s ease-in-out;
+			/*transition-delay:1s;*/  /*延迟*/
+		}
+		.one{
+			top:200px;
+			left:200px;
+			transform:rotate(-15deg);
+		}
+		.two{
+			top:200px;
+			left:480px;
+			transform:rotate(15deg);
+		}
+		.three{
+			top:320px;
+			left:350px;
+			transform:rotate(10deg);
+		}
+		img:hover{
+			z-index:2;
+			box-shadow: 5px 5px 5px #ddd;
+			transform:scale(1.5);
+		}
+		
+		
+	</style>
+
+</head>
+
+
+<body>
+	<div class="photo"> 
+    	<img class="one" src="image/1.jpg"/>
+        <img class="two" src="image/5.jpg"/>
+        <img class="three" src="image/9.jpg"/>
+    </div>
+</body>
+</html>
