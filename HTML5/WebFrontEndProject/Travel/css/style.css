@@ -159,7 +159,8 @@ div#weather ul{
 	border:1px solid #4ab0ff;
 }
 #route{
-	clear:both; margin:0px;
+	clear:both; 
+	margin:0px;
 	padding:5px 0px 15px 0px;
 }
 #route h3{
