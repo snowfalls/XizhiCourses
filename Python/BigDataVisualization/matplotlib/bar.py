@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
-font_set=FontProperties(fname=r"D:\课程材料\字体\simsun.ttc",size=15)
+font_set=FontProperties(fname=r"D:\字体\simsun.ttc",size=15)
 
 x=[0,1,2,3,4,5]
 y=[1,2,3,2,4,3]
