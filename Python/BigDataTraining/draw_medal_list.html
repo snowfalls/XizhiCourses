@@ -1,0 +1,136 @@
+<!-- 注意：在使用该文件时必须通过网页服务器打开
+     具体方法如下：
+     在终端执行：
+    python -m http:server 8888
+    通过 http://localhost:8888进行访问 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn{
+            width: 160px;
+            height: 50px;
+        }
+        .dis{
+            width: 1600px;
+            height: 400px;
+            border: 2px solid paleturquoise;
+            margin: 0 auto;
+        }
+        .pie{
+            width: 500px;
+            height:500px;
+            border: 2px solid red;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+</head>
+<body>
+<input type="button" value="绘图" class="btn">
+<div class="dis"></div>
+<div class="pie"></div>
+</body>
+<script>
+// <!--    压缩包，运行图截图-->
+    var btn = document.getElementsByClassName("btn")[0];
+    var dis = document.getElementsByClassName("dis")[0];
+    var pie = document.getElementsByClassName("pie")[0];
+    // 点击
+    btn.onclick = function () {
+        // 获取数据
+        $.get("medal.json",function (datas) {
+            // console.log(datas)
+            var name = [];
+            var golden = [];
+            var silver = [];
+            var bronze = [];
+            var total = [];
+            for(var i=0;i<datas.length;i++){
+                name.push(datas[i].name);
+                golden.push(datas[i].golden);
+                silver.push(datas[i].silver);
+                bronze.push(datas[i].bronze);
+                total.push(datas[i].total);
+            }
+
+            var top5_name = [];
+            var top5_gold = [];
+            var top5_silv = [];
+            var top5_bron = [];
+            for(var i=0;i<5;i++){
+                top5_name.push(name[i]);
+                top5_gold.push(golden[i]);
+                top5_silv.push(silver[i]);
+                top5_bron.push(bronze[i]);
+            }
+
+            console.log(name)
+            // 1.初始化
+            var my_dis = echarts.init(dis);
+            // 2.配置
+            var option = {
+                title:{
+                    text:"东京奥运会奖牌榜前五"
+                },
+                legend:{
+                    left:"right"
+                },
+                xAxis:{
+                    data:top5_name
+                },
+                yAxis: {},
+                series:[
+                    {
+                        name:"金牌",
+                        type:"bar",
+                        data:top5_gold
+                    },
+                    {
+                        name:"银牌",
+                        type:"bar",
+                        data:top5_silv
+                    },
+                    {
+                        name:"铜牌",
+                        type:"bar",
+                        data:top5_bron
+                    },
+                ]
+            };
+            // 绘图
+            my_dis.setOption(option)
+
+
+            var my_pie = echarts.init(pie);
+            // 2.配置
+            var option_pie = {
+                title:{
+                    text:"东京奥运会奖牌榜前五"
+                },
+                series:[
+                    {
+                        name:'前五名奖牌占比',
+                        type:'pie',
+                        ridius:'55%',
+                        data:[
+                            {name:top5_name[0],value:top5_gold[0]},
+                            {name:top5_name[1],value:top5_gold[1]},
+                            {name:top5_name[2],value:top5_gold[2]},
+                            {name:top5_name[3],value:top5_gold[3]},
+                            {name:top5_name[4],value:top5_gold[4]},
+                        ]
+                    }
+                ]
+            };
+            // 绘图
+            my_pie.setOption(option_pie)
+
+        })
+    }
+
+</script>
+</html>
