@@ -7,38 +7,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>奥运会奖牌统计</title>
     <style>
         .btn{
             width: 160px;
             height: 50px;
         }
         .dis{
-            width: 1600px;
-            height: 400px;
+            width: 1000px;
+            height: 500px;
             border: 2px solid paleturquoise;
             margin: 0 auto;
+            float: left;
         }
         .pie{
             width: 500px;
             height:500px;
             border: 2px solid red;
             margin: 0 auto;
+            float: left;
+        }
+        .sca{
+            width: 500px;
+            height: 500px;
+            border: 2px solid blue;
+            margin: 0 auto;
+            float: left;
         }
     </style>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/echarts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
 </head>
 <body>
 <input type="button" value="绘图" class="btn">
 <div class="dis"></div>
 <div class="pie"></div>
+<div class="sca"></div>
 </body>
 <script>
 // <!--    压缩包，运行图截图-->
     var btn = document.getElementsByClassName("btn")[0];
     var dis = document.getElementsByClassName("dis")[0];
     var pie = document.getElementsByClassName("pie")[0];
+    var sca = document.getElementsByClassName("sca")[0];
     // 点击
     btn.onclick = function () {
         // 获取数据
@@ -68,7 +79,7 @@
                 top5_bron.push(bronze[i]);
             }
 
-            console.log(name)
+            
             // 1.初始化
             var my_dis = echarts.init(dis);
             // 2.配置
@@ -102,33 +113,56 @@
                 ]
             };
             // 绘图
-            my_dis.setOption(option)
+            my_dis.setOption(option);
 
 
             var my_pie = echarts.init(pie);
             // 2.配置
+            var top5_data = [];
+            // 生成一个包含有前五名信息的JS数组
+            for(var i=0; i<5; i++) {
+                top5_data.push({name:top5_name[i], value:top5_gold[i]});
+            }
             var option_pie = {
                 title:{
-                    text:"东京奥运会奖牌榜前五"
+                    text:"东京奥运会金牌榜前五占比"
                 },
                 series:[
                     {
                         name:'前五名奖牌占比',
                         type:'pie',
                         ridius:'55%',
-                        data:[
-                            {name:top5_name[0],value:top5_gold[0]},
-                            {name:top5_name[1],value:top5_gold[1]},
-                            {name:top5_name[2],value:top5_gold[2]},
-                            {name:top5_name[3],value:top5_gold[3]},
-                            {name:top5_name[4],value:top5_gold[4]},
-                        ]
+                        data:top5_data
                     }
                 ]
             };
             // 绘图
-            my_pie.setOption(option_pie)
+            my_pie.setOption(option_pie);
 
+            
+            var my_scatter = echarts.init(sca);
+            // 2.配置
+            var relation_data = [];
+            for(var i=0; i<golden.length; i++) {
+                relation_data.push([golden[i], total[i]]);
+            }
+            console.log(relation_data);
+            var option_scatter = {
+                title:{
+                    text:"金牌与奖牌数关系"
+                },
+                xAxis:{},
+                yAxis:{},
+                series:[
+                    {
+                        type:'scatter',
+                        symbolSize:10,
+                        data:relation_data
+                    }
+                ]
+            };
+            // 绘图
+            my_scatter.setOption(option_scatter);
         })
     }
 
