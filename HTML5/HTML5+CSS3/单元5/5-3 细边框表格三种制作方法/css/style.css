@@ -1,0 +1,7 @@
+table{
+	background-color: #000;
+}
+th,td,tr{
+	background-color: #fff;
+	padding:10px;
+}

@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.column {
+	float: left;
+}
+
+.nav {
+	width: 160px;
+	height: 120px;
+	background-color: brown;
+}
+
+.list {
+	width: 160px;
+	height: 600px;
+	background-color: dodgerblue;
+}
+
+.content {
+	float: left;
+}
+
+.main {
+	width: 480px;
+	height: 720px;
+	background-color: orange;
+}
+
+.sidebar {
+	float: right;
+}
+
+.news {
+	width: 320px;
+	height: 120px;
+	background-color: darkgreen;
+}
+
+.guild {
+	width: 320px;
+	height: 300px;
+	background-color: darkgoldenrod;
+}
+
+.service {
+	width: 320px;
+	height: 300px;
+	background-color: mediumpurple;
+}
+
+.clear {
+	clear: both;
+}
+
+footer {
+	height: 80px;
+	background-color: red;
+}

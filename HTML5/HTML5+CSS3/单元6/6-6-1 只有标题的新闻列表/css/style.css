@@ -1,0 +1,33 @@
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	width: 350px;
+}
+
+a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #936;
+	text-decoration: none;
+	border-bottom: 1px dashed #888;
+	background-image: url("../img/li.png");
+	background-repeat: no-repeat;
+	background-position: 5px 13px;
+	padding-left: 30px;
+	color: #000;
+	/*以下为溢出*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+a:hover {
+	background-color: #efefef;
+	cursor: pointer;
+}

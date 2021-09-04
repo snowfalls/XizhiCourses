@@ -1,0 +1,32 @@
+.container {}
+
+body {
+	font-family: "comic sans ms", "微软雅黑";
+	font-size: 32px;
+}
+
+div {
+	-webkit-transition: width 1s ease;
+	/* Safari 和 Chrome */
+	-moz-transition: width 1s ease;
+	/* Firefox 4 */
+	-o-transition: width 1s ease;
+	/* Opera */
+	-ms-transition: width 2s ease;
+	/* IE8 */
+	transition: width 1s ease;
+}
+
+.header {
+	background-color: lightgoldenrodyellow;
+	min-height: 100px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+.footer {
+	background-color: lightpink;
+	min-height: 100px;
+	padding-right: 15px;
+	padding-left: 15px
+}

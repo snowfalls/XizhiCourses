@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>overflow、text-overflow属性介绍</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1>overflow、text-overflow属性介绍</h1>
+		<div class="left">
+			<h3>中文和英文下的word-wrap:break-word</h3>
+			<div class="a">
+				这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文 这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文 文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文
+			</div>
+			<div class="b">
+				Here is the Chinese languageHere is the Chinese languageHere is the Chinese languageHere is the Chinese language Here is the Chinese languageHere is the Chinese languageHere is the Chinese languageHere is the Chinese language
+			</div>
+		</div>
+		<div class="left">
+			<h3>中文和英文下的word-break:break-all</h3>
+			<div class="c">
+				这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文 这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文 文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文
+			</div>
+			<div class="d">
+				Here is the Chinese languageHere is the Chinese languageHere is the Chinese languageHere is the Chinese language Here is the Chinese languageHere is the Chinese languageHere is the Chinese languageHere is the Chinese language
+			</div>
+		</div>
+
+		<div class="left">
+			<h3>不换行文字下的text-overflow: ellipsis;</h3>
+			<div class="e">
+				这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文 这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文 文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文这里是中文
+			</div>
+			<div class="e">
+				Here is the Chinese languageHere is the Chinese languageHere is the Chinese languageHere is the Chinese language Here is the Chinese languageHere is the Chinese languageHere is the Chinese languageHere is the Chinese language
+			</div>
+		</div>
+		<div class="left">
+			<h3>换行文字下的text-overflow: ellipsis;</h3>
+			<div class="e">
+				这里是中文这里是中文这里是中文<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文 这里是中文这里是中文<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/> 这里是中文这里是中文这里是中文
+				<br/>
+			</div>
+			<div class="e">
+				Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/> Here is the Chinese language<br/>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<h3>ul新闻链表超连接</h3>
+		<ul>
+			<li>
+				<a href="#">这里的标题很长这里的标题很长这里的标题很长</a>
+			</li>
+			<li>
+				<a href="#">这里的标题很长这里的标题很长这里的标题很长</a>
+			</li>
+			<li>
+				<a href="#">这里的标题很长这里的标题很长这里的标题很长</a>
+			</li>
+			<li>
+				<a href="#">这里的标题很长这里的标题很长这里的标题很长</a>
+			</li>
+			<li>
+				<a href="#">这里的标题很长这里的标题很长这里的标题很长</a>
+			</li>
+			<li>
+				<a href="#">这里的标题很长这里的标题很长这里的标题很长</a>
+			</li>
+		</ul>
+	</body>
+
+</html>

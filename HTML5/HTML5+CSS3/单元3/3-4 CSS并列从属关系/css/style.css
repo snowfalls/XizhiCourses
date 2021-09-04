@@ -1,0 +1,20 @@
+.p1{
+	color:red;
+}
+.p2{
+	color:green;
+}
+.p1,.p2{
+	font-size:16px;
+}
+/*并列关系，设置p1和p2具有相同的样式，中间用逗号*/
+.p1 span{
+	font-family: 黑体;
+	font-weight:bold;
+	text-decoration: underline;
+}
+.p2 span{
+	font-family: 隶书;
+	text-decoration: overline;
+}
+/*从属关系,分别设置p1和p2下的span样式，中间用空格*/

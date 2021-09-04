@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>css选择器</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1>css选择器</h1>
+		<h3>选择子元素</h3>
+		<p>如果您不希望选择任意的后代元素，而是希望缩小范围，只选择某个元素的子元素，请使用子元素选择器（Child selector）。 例如，如果您希望选择只作为 h1 元素子元素的 strong 元素，可以这样写：</p>
+		<p>h1 > strong {color:red;}</p>
+		<p>这个规则会把第一个 h1 下面的两个 strong 元素变为红色，但是第二个 h1 中的 strong 不受影响：</p>
+		<h1>This is <strong>very</strong> <strong>very</strong> important.</h1>
+		<h1>This is <em>really <strong>very</strong></em> important.</h1>
+
+		<p>请看下面这个选择器：</p>
+		<p>table.company td > p</p>
+		<p>上面的选择器会选择作为 td 元素子元素的所有 p 元素，这个 td 元素本身从 table 元素继承，该 table 元素有一个包含 company 的 class 属性。</p>
+		<h3>first-letter 选择器</h3>
+		<p>选择每个
+			<p> 元素的首字母，并为其设置样式：</p>
+			<p>p:first-letter { font-size:200%; color:#8A2BE2; }
+			</p>
+			<p>My name is Donald.</p>
+			<p>I live in Duckburg.</p>
+			<p>My best friend is Mickey.</p>
+			<h3>[attribute$=value] 选择器</h3>
+			<p>设置 class 属性值以 "test" 结尾的所有 div 元素的背景色：</p>
+			<p>div[class$="test"] { background:#ffff00; }
+			</p>
+			<div class="first_test">第一个 div 元素。</div>
+			<div class="second">第二个 div 元素。</div>
+			<div class="test">第三个 div 元素。</div>
+			<p class="test">这是段落中的文本。</p>
+	</body>
+
+</html>

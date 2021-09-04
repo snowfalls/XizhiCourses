@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	height: 100px;
+	background-color: firebrick;
+}
+
+menu {
+	height: 80px;
+	background-color: lightpink;
+	margin: 0;
+	padding: 0;
+}
+
+.scroll {
+	height: 300px;
+	background-color: cornflowerblue;
+}
+
+.content {
+	width: 320px;
+	height: 380px;
+	float: left;
+	background-color: pink;
+}
+
+.photo {
+	width: 240px;
+	height: 380px;
+	float: left;
+	background-color: yellowgreen;
+}
+
+.introduce {
+	width: 400px;
+	height: 380px;
+	float: right;
+	background-color: blanchedalmond;
+}
+
+.friendlink {
+	height: 90px;
+	background-color: brown;
+}
+
+.clear {
+	clear: both;
+}
+
+footer {
+	background-color: sandybrown;
+	height: 80px;
+}

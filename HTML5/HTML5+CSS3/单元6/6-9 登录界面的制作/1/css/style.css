@@ -1,0 +1,170 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #30b58a;
+	color: #717171;
+	font-size: 12px;
+	font-family: "comic sans ms";
+}
+
+a {
+	color: #717171;
+}
+
+ul {
+	list-style: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding-top: 20px;
+}
+
+li {
+	padding: 10px 0px;
+}
+
+input {
+	border: none;
+}
+
+#container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 450px;
+	height: 500px;
+	margin-left: -225px;
+	margin-top: -250px;
+	/*浏览器上下居中，左右居中*/
+}
+
+header {
+	height: 198px;
+	width: 199px;
+	margin: 0 auto;
+	background-image: url(../img/head.png);
+}
+
+#logon {
+	width: 350px;
+	height: 240px;
+	margin: 30px auto 0px auto;
+	background-color: white;
+	position: relative;
+	text-align: center;
+}
+
+.triangle_up {
+	height: 0px;
+	width: 0px;
+	border-bottom: 20px solid #ffffff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: absolute;
+	top: -20px;
+	left: 155px;
+}
+
+input.user {
+	background-color: #ededed;
+	background-image: url("../img/user.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #878787;
+	padding: 5px 5px 5px 50px;
+	width: 200px;
+	height: 30px;
+}
+
+input.pwd {
+	background-color: #ededed;
+	background-image: url("../img/pwd.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #878787;
+	padding: 5px 5px 5px 50px;
+	width: 200px;
+	height: 30px;
+}
+
+input.submit {
+	background-color: #ffde13;
+	color: #514c53;
+	padding: 5px;
+	width: 220px;
+	height: 35px;
+}
+
+
+/*1、正三角形：
+.triangle_up
+{
+  height:0px; width:0px;
+  border-bottom:50px solid #006633;
+  border-left:50px solid transparent;
+  border-right:50px solid transparent;
+}
+2、倒三角形：
+.triangle_down
+{
+  height:0px; width:0px;
+  border-top:50px solid #006633;
+  border-left:50px solid transparent;
+  border-right:50px solid transparent;
+}
+3、左三角形
+.triangle_left
+{
+  height:0px; width:0px;
+  border-left:50px solid #006633;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  float:left;
+}
+4、右三角形
+.triangle_right
+{
+  height:0px; width:0px; float:left;
+  border-right:50px solid #006633;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+}
+5、十字街效果
+.crossSquare
+{
+  height:0px; width:0px;
+  border-right:50px solid blue;
+  border-top:50px solid gray;
+  border-bottom:50px solid red;
+  border-left:50px solid yellow;
+}
+
+6、方向箭头（突出效果，改动了源代码）
+CSS：
+
+.triangle_left
+{
+  height:0px; width:0px;
+  border-left:50px solid #006633;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  /*float:left;*/
+
+
+}
+.triangle_right {
+	height: 0px;
+	width: 0px;
+	/*float:left;*/
+	
+	border-right: 50px solid #006633;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+*/

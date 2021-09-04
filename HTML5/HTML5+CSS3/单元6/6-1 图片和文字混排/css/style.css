@@ -1,0 +1,14 @@
+body{
+	line-height:2em;
+}
+img{
+	margin:5px;
+	border:1px solid #eee;
+	padding: 5px;
+}
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}

@@ -1,0 +1,85 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.table-out {
+	width: 100%;
+	height: 100%;
+}
+
+.row-one {
+	height: 67px;
+}
+
+.table-top {
+	height: 67px;
+	width: 100%;
+}
+
+.col-one {
+	width: 188px;
+}
+
+.col-two {
+	width: 100%;
+}
+
+.logo {
+	width: 201px;
+	height: 55px;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+}
+
+.top-bg {
+	width: 463px;
+	height: 67px;
+	background-image: url(../img/top_bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.table-left {
+	width: 188px;
+	height: 100%;
+}
+
+.row-1 {
+	height: 120px;
+	background-image: url(../img/left-1.png);
+}
+
+.row-2 {
+	background-image: url(../img/left-2.png);
+}
+
+.row-3 {
+	height: 12px;
+	background-image: url(../img/left-3.png);
+}
+
+.table-right {
+	width: 100%;
+	height: 100%;
+}
+
+.row-4 {
+	height: 13px;
+	background: url(../img/right-2.png) repeat-x;
+}
+
+.frame {
+	width: 100%;
+	height: 100%;
+}

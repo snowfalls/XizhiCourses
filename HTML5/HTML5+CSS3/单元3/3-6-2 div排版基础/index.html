@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>div排版基础</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1>div排版基础</h1>
+		<h3>div基本属性</h3>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div>这是第十一个div，第一个在上面，看不到，不占空间。说明没有元素的div没有占据任何空间</div>
+		<div class="one">
+		</div>
+		<div>这是第十三个div，第十二个再小，都要占据一行。</div>
+		<h3>块级元素和行内元素</h3>
+		<div class="inline"> div块级元素转化为内联元素 </div>
+		<div class="inline"> div块级元素转化为内联元素 </div>
+		<span class="block">span内联元素转化为块级元素</span>
+		<span class="block">span内联元素转化为块级元素</span>
+		<h3>盒子模型基础</h3>
+		<div id="box"></div>
+		<p>width:300px;height:300px;padding:50px;margin:50px;border:5px solid #933;</p>
+		<p>实际占据空间大小，宽度：300+50+50+5+5=410px，高度：300+50+50+5+5=410px。</p>
+		<h3>margin和padding</h3>
+		<p><img src="img/box.png" /></p>
+		<div id="box">
+			盒子和图片之间的距离为margin-top，盒子和里面文字的举例为padding-top和padding-left。
+		</div>
+		<h3>div嵌套使用</h3> 
+		<xmp><div><div></div></div></xmp> 
+		<!-- xmp中间的内容会被直接解析为字符串，而不会被解析为对应的html语言 -->
+	</body>
+
+</html>

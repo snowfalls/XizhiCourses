@@ -1,0 +1,65 @@
+div {
+	margin: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.a {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;
+	float: left;
+	word-wrap: break-word;
+}
+
+.b {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;
+	float: left;
+	word-wrap: break-word;
+}
+
+.c {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;
+	float: left;
+	word-break: break-all;
+}
+
+.d {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;
+	float: left;
+	word-break: break-all;
+}
+
+.e {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;
+	float: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+ul {
+	width: 300px;
+	/*可以用百分比*/
+	border: 1px solid #ccc;
+	background-color: #efefef;
+}
+
+ul li a {
+	display: block;
+	float: left;
+	width: 250px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

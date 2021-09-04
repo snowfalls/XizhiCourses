@@ -1,0 +1,140 @@
+body {
+	font-family: "comic sans ms", "微软雅黑";
+	line-height: 2em;
+}
+div {
+	-webkit-transition: width 1s ease;
+	/* Safari 和 Chrome */
+	-moz-transition: width 1s ease;
+	/* Firefox 4 */
+	-o-transition: width 1s ease;
+	/* Opera */
+	-ms-transition: width 2s ease;
+	/* IE8 */
+	transition: width 1s ease;
+}
+header {
+	background: url(../img/header.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	min-height: 250px;
+}
+nav {
+	background: linear-gradient(#4a4a4a, #10131a);
+}
+nav a {
+	color: white;
+}
+ul.list-unstyled li {
+	background-image: url("../img/li.png");
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+	padding-left: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+ul.list {
+	margin-left: -35px;
+}
+ul.list li a {
+	display: block;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*以下为电脑常见分辨率*/
+	
+	@media (min-width:1200px) {
+header {
+	min-height: 250px;
+}
+}
+ @media (min-width:992px) and (max-width:1199px) {
+header {
+	min-height: 280px;
+}
+}
+ @media (min-width:768px) and (max-width:991px) {
+header {
+	min-height: 150px;
+}
+}
+ @media (min-width:600px) and (max-width:767px) {
+header {
+	min-height: 130px;
+}
+}
+ @media (min-width:240px) and (max-width:599px) {
+header {
+	min-height: 80px;
+}
+}
+h4 {
+	font-size: 16px;
+	color: #004e83;
+	padding: 8px 12px;
+	border-bottom:1px solid #17a2ff;
+	margin-left:-10px;
+	padding-left:0;
+}
+h4.media-heading{
+	margin-left:0;
+}
+.bg-title{
+	padding:6px 10px;
+	background-color:#cfeeff;
+	color:#0364ad;
+	border:1px solid #17a2ff;
+}
+.label-primary a{
+	color:#ffffff;
+}
+.text-muted {
+	margin-left: 1em;
+	font-size: 80%;
+	color: #ccc;
+}
+.search{
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#3bbff0), to(#016ec0)); 
+	margin-top:10px;
+	margin-right:0;
+}
+.search h3{
+	color:#fff;
+	font-size:16px;
+	margin-top:10px;
+	margin-left:10px;
+}
+.form-control{
+	width:90%;
+}
+.btn{
+	margin:10px 5%;
+}
+.alert{
+	margin-bottom:5px;
+	margin-right:10px;
+	padding:0 10px;
+}
+.drop{
+	width:95%;
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: center;
+    text-align-last: center;
+}
+.drop option{
+	text-align: center;
+    text-align-last: center;
+}
+.footer {
+	border-top:3px solid #41a6ff;
+	min-height: 50px;
+}

@@ -1,0 +1,22 @@
+ul.imglist {
+	width: 536px;
+}
+
+ul.imglist li {
+	list-style: none;
+	float: left;
+	width: 160px;
+	padding: 5px;
+}
+
+ul.imglist li img {
+	width: 160px;
+	height: 90px;
+}
+
+ul.imglist li span {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: block;
+}

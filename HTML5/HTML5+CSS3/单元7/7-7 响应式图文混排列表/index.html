@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title></title>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!--Bootstrap 多媒体对象（Media Object）
+本章我们将讲解 Bootstrap 中的多媒体对象（Media Object）。这些抽象的对象样式用于创建各种类型的组件（比如：博客评论），我们可以在组件中使用图文混排，图像可以左对齐或者右对齐。媒体对象可以用更少的代码来实现媒体对象与文字的混排。
+媒体对象轻量标记、易于扩展的特性是通过向简单的标记应用 class 来实现的。你可以在 HTML 标签中添加以下两种形式来设置媒体对象：
+.media：该 class 允许将媒体对象里的多媒体（图像、视频、音频）浮动到内容区块的左边或者右边。
+.media-list：如果你需要一个列表，各项内容是无序列表的一部分，可以使用该 class。可用于评论列表与文章列表。
+让我们来看看下面这个有关默认的媒体对象 .media 的实例：-->
+		<!-- 
+    media                              图文混排
+    media-left(right)                图片的区域 在左边显示(右边)
+    media-body                        内容区域
+    media-heading                    内容区域里的标题
+    media-middle                    图片居中
+    media-bottom                    图片居下
+-->
+		<div class="container">
+			<div class="media page-header">
+				<a href="#" class="media-left media-middle media-bottom">
+					<img src="img/timg.jpg" width="100" />
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Bootstrap开源的用于前端开发的工具包</h4>
+					<p>Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。 它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。 Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。 Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。
+					</p>
+				</div>
+			</div>
+			<!---------------------------------------------------->
+			<div class="media page-header">
+				<div class="media-body">
+					<h4 class="media-heading">Bootstrap开源的用于前端开发的工具包</h4>
+					<p>Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。 它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。 Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。 Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。
+					</p>
+				</div>
+				<a href="#" class="media-right">
+					<img src="img/timg.jpg" width="100" />
+				</a>
+			</div>
+			<!--------------------------------------------------------->
+			<div class="media page-header">
+				<a href="#" class="media-left">
+					<img src="img/timg.jpg" width="100" />
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Bootstrap开源的用于前端开发的工具包</h4>
+					<p>Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。 它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。 Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。 Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。
+					</p>
+				</div>
+				<a href="#" class="media-right">
+					<img src="img/timg.jpg" width="100" />
+				</a>
+			</div>
+			<!-------------------------------------------------------------------->
+			<div class="media page-header">
+				<a href="#" class="media-left">
+					<img src="img/timg.jpg" width="100" />
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Bootstrap开源的用于前端开发的工具包</h4>
+					<p>Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。 它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。 Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。 Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。
+					</p>
+					<div class="media">
+						<a href="#" class="media-left">
+							<img src="img/timg.jpg" width="100" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Bootstrap开源的用于前端开发的工具包</h4>
+							<p>Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。 它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。 Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。 Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

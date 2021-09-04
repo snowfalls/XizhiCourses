@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>css浮动定位</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<h1>css浮动定位</h1>
+		<h2>条件：main的实际宽度>=sidebar实际宽度+content实际宽度</h2>
+		<h3>sidebar样式没有float:left，content样式没有float:left。html先使用sidebar后使用content。</h3>
+		<div class="main">
+			<div class="sidebar"></div>
+			<div class="content"></div>
+		</div>
+		<h3>sidebar样式有float:left，content样式没有float:left。html先使用sidebar后使用content。</h3>
+		<div class="main">
+			<div class="sidebar left"></div>
+			<div class="content"></div>
+		</div>
+		<h3>sidebar样式有float:left，content样式有float:left。html先使用sidebar后使用content。</h3>
+		<div class="main">
+			<div class="sidebar left"></div>
+			<div class="content left"></div>
+		</div>
+		<h3>sidebar样式有float:left，content样式有float:right。html先使用sidebar后使用content。</h3>
+		<div class="main">
+			<div class="sidebar left"></div>
+			<div class="content right"></div>
+		</div>
+		<h3>sidebar样式有float:left，content样式有float:right。html先使用content后使用sidebar。</h3>
+		<div class="main">
+			<div class="sidebar left"></div>
+			<div class="content right"></div>
+		</div>
+	</body>
+</html>

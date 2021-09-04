@@ -1,0 +1,81 @@
+body {
+	font-size: 14px;
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+}
+
+td {
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+
+.radius-one {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+
+.radius-two {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 10px 20px;
+}
+
+.radius-three {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 10px/30px;
+}
+
+.radius-four {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 30px/10px;
+}
+
+.div-color {
+	width: 100px;
+	height: 100px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: red green blue yellow;
+}
+
+.semi-circle {
+	width: 100px;
+	height: 50px;
+	/*高度是宽度的一半*/
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 50px 50px 0 0;
+	/*左上和右上至少为height值*/
+}
+
+.radius-circle {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 50%;
+}

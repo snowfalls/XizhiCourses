@@ -1,0 +1,87 @@
+div {
+	float: left;
+	margin: 10px;
+}
+
+img.one {
+	/*透明*/
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+img.one:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	cursor: pointer;
+}
+
+img.two {
+	/*模糊*/
+	-webkit-filter: blur(9px);
+	filter: blur(9px);
+}
+
+img.three {
+	/*灰度*/
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+img.four {
+	/*亮度*/
+	-webkit-filter: brightness(2.3);
+	filter: brightness(2.3);
+}
+
+img.five {
+	/*对比度*/
+	-webkit-filter: contrast(4.4);
+	filter: contrast(4.4);
+}
+
+img.six {
+	/*饱和度*/
+	-webkit-filter: saturate(3.6);
+	filter: saturate(3.6);
+}
+
+img.seven {
+	/*色相旋转*/
+	-webkit-filter: hue-rotate(185deg);
+	filter: hue-rotate(185deg);
+}
+
+img.eight {
+	/*反色*/
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+img.nine {
+	/*阴影 */
+	-webkit-filter: drop-shadow(0px 0px 5px #000);
+	filter: drop-shadow(0px 0px 5px #000);
+}
+
+img.ten {
+	/*褐色*/
+	-webkit-filter: blur(9px);
+	filter: blur(9px);
+}
+
+div.background {
+	width: 350px;
+	height: 196px;
+	background: url('../img/background.jpg') no-repeat;
+	border: 1px solid black;
+}
+
+div.box {
+	width: 300px;
+	height: 150px;
+	margin: 20px auto;
+	background-color: #ffffff;
+	filter: alpha(opacity:50);
+	opacity: 0.5;
+	text-align: center;
+}

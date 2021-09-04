@@ -1,0 +1,84 @@
+body {
+	background-color: #ffffff;
+	font-family: "宋体";
+	font-size: 16px;
+}
+
+h1 {
+	font-family: "黑体";
+	font-size: 30px;
+	text-align: center;
+}
+
+.bg {
+	background-color: #A0A0A0;
+	font-family: "黑体";
+}
+
+.table-out {
+	border-collapse: collapse;
+	width: 960px;
+}
+
+.table-out td {
+	border: solid 1px black;
+	padding: 10px;
+}
+
+.col-one {
+	background-color: #A0A0A0;
+	width: 150px;
+	font-family: "黑体";
+	text-align: center;
+}
+
+.col-two {
+	width: 170px;
+	text-align: center;
+}
+
+.col-three {
+	width: 150px;
+	background-color: #A0A0A0;
+	font-family: "黑体";
+	text-align: center;
+}
+
+.col-four {
+	width: 170px;
+	text-align: center;
+}
+
+.col-five {
+	width: 150px;
+	text-align: center;
+}
+
+.col-six {
+	text-align: center;
+}
+
+.table-in {
+	width: 700px;
+}
+
+.table-in td {
+	border: none;
+}
+
+.table-in td.one {
+	text-align: left;
+}
+
+.table-in td.two {
+	text-align: left;
+}
+
+.table-in td.three {
+	text-align: center;
+}
+.evaluate {
+	font-family:Tahoma,"宋体";  
+	/*
+设置字体，先写英文字体，再写中文字体，会优先匹配使用英文字体，但是在英文字体中找不到中文字符，这样中文就会自动使用后写的中文字体了。*/
+}

@@ -1,0 +1,12 @@
+h1>strong {
+	color: red;
+}
+
+p:first-letter {
+	font-size: 200%;
+	color: #8A2BE2;
+}
+div[class$="test"]
+{
+background:#ffff00;
+}

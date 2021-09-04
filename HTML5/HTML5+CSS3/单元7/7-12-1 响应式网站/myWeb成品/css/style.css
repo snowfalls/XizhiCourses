@@ -1,0 +1,116 @@
+body {
+	line-height: 2em;
+}
+/*要有先后顺序*/
+	
+header {
+	background: url(../img/header.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	min-height: 150px;
+}
+header form {
+	margin-top: 120px;
+	margin-left: 500px;
+}
+ul.list-unstyled li {
+	background-image: url("../img/li.png");
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+	padding-left: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+ul.list {
+	margin-left: -25px;
+}
+ul.list li a {
+	display: block;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+	/*以下为电脑常见分辨率*/
+	
+	@media (min-width:1200px) {
+header {
+	min-height: 150px;
+}
+}
+ @media (min-width:992px) and (max-width:1199px) {
+header {
+	min-height: 124px;
+}
+}
+ @media (min-width:768px) and (max-width:991px) {
+header {
+	min-height: 96px;
+}
+}
+ @media (min-width:600px) and (max-width:767px) {
+header {
+	min-height: 100px;
+}
+}
+ @media (min-width:240px) and (max-width:599px) {
+header {
+	min-height: 70px;
+}
+}
+.search {
+	margin: 0;
+	padding: 0;
+}
+.navbar-default {
+	background: linear-gradient(to bottom, #356AA0, #337ccb);
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	background: linear-gradient(to bottom, #3F4C6B, #4b5c84);
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #3F4C6B
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ddd
+}
+ @media (min-width:768px) {
+.navbar {
+	border-radius: 0
+}
+}
+.text-muted {
+	margin-left: 1em;
+	font-size: 80%;
+	color: #fff;
+}
+.text-primary {
+	font-weight: bold;
+}
+.text-indent {
+	text-indent: 2em
+}
+.more a {
+	font-size: 80%;
+	color: #000;
+	background-image: url(../img/more.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 18px;
+}
+h4 {
+	font-size: 16px;
+	color: #fff;
+	padding: 8px 12px;
+	/*参考.btn样式*/
+	background: linear-gradient(to bottom, #356AA0, #337ccb);
+}

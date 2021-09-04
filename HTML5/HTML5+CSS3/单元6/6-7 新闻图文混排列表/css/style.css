@@ -1,0 +1,85 @@
+body {
+	font: "微软雅黑" 12px;
+}
+
+a {
+	text-decoration: none;
+	color: #356AA0;
+}
+
+img {
+	width: 150px;
+	height: 100px;
+	/*强制设置图片宽度*/
+	border-radius: 8px;
+	/*图片设置圆角*/
+}
+
+.clear {
+	clear: both;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	border-bottom: dashed 1px;
+	padding: 10px;
+	width: 560px;
+	position: relative;
+}
+
+.left {
+	width: 150px;
+	height: 100px;
+	float: left;
+}
+
+.right {
+	width: 350px;
+	height: 100px;
+	margin-left: 10px;
+	float: left;
+}
+
+.title {
+	width: 290px;
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	/*文本过长缩略*/
+}
+
+.date {
+	width: 60px;
+	color: #888888;
+	float: right;
+}
+
+.content {
+	width: 350px;
+	height: 80px;
+	line-height: 1.6em;
+	/*设置内容每行文字的高度*/
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	text-align: justify;
+	/*文本分散对齐*/
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	overflow: hidden;
+	/*超出隐藏*/
+}
+
+.more {
+	float: right;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}

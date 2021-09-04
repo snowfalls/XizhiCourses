@@ -1,0 +1,18 @@
+/*
+table td:nth-child(even) {
+	color: red;
+}*/
+
+.out-table {
+	width: 500px;
+}
+
+.out-table tr:nth-child(odd) {
+	background: #666666;
+	color: #ffffff;
+}
+
+tr:hover {
+	background-color: red;
+	color: red;
+}

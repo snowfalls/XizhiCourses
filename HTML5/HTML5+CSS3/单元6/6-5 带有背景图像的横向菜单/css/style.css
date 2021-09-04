@@ -1,0 +1,36 @@
+ul,
+li {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	height: 45px;
+	line-height: 45px;
+	background-color: #efefef;
+	width: 960px;
+	border-right: 1px solid #ccc;
+}
+
+li {
+	float: left;
+}
+
+a {
+	display: block;
+	width: 239px;
+	color: #000;
+	text-decoration: none;
+	background-image: url(../img/home.png);
+	background-repeat: no-repeat;
+	background-position: 60px 10px;
+	text-indent: 100px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+a:hover {
+	background-color: #ccc;
+}

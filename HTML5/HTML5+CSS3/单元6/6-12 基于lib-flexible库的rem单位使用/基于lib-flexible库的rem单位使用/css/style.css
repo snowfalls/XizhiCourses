@@ -1,0 +1,309 @@
+body {
+	font-family: "微软雅黑",helvetica;
+	/*1920*1080的手机宽度 ，1080px=10rem*/
+	/*width: 10rem;*/
+	margin: 0 auto;
+	font-size: 16px;
+	/*body设置字体无效*/
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+a{
+	padding: 0rem;
+	margin: 0rem;
+	text-decoration: none;
+}
+a .active{
+	color: #84D945;
+}
+#content{
+	width: 9.2rem;
+	margin: 0rem .4rem 1.4rem .4rem;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.menu {
+	width: 10rem;
+	border-top:.02rem solid #e5e5e5;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	font-size: .33rem;
+	position: fixed;
+	bottom: 0;
+	background-color: #FFFFFF;
+	background-size: .58rem .58rem;
+}
+
+
+.menu li {
+	float: left;
+	background-repeat: no-repeat;
+	background-position: .96rem .16rem;
+}
+
+.menu li a {
+	display: bolok;
+	float: left;
+	width: 2.5rem;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	margin: .34rem 0rem .12rem 0rem;
+}
+.menu li a.active{
+	color: #46c01b;
+}
+.menu img{
+	width: .58rem;
+	height: .58rem;
+}
+.index{
+	background-image: url(../img/house.png);
+	background-size: .58rem .58rem;
+}
+.news{
+	background-image: url(../img/news.png);
+	background-size: .58rem .58rem;
+}
+.shop{
+	background-image: url(../img/shop.png);
+	background-size: .58rem .58rem;
+}
+.our{
+	background-image: url(../img/our.png);
+	background-size: .58rem .58rem;
+}
+.index-active{
+	background-image: url(../img/homeactive.png);
+	background-size: .58rem .58rem;
+}
+.news-active{
+	background-image: url(../img/newsa.png);
+	background-size: .58rem .58rem;
+}
+.shop-active{
+	background-image: url(../img/shopactive.png);
+	background-size: .58rem .58rem;
+}
+.our-active{
+	background-image: url(../img/ouractive.png);
+	background-size: .58rem .58rem;
+}
+.topmenu{
+	width: 10rem;
+	background-color: #333;
+	height: 1.17rem;
+	line-height: 1.17rem;
+	font-size: .48rem;
+	position: fixed;
+	top: 0;
+	text-align: center;
+}
+.topmenu-icon{
+	font-size: .40rem;
+	width: 2rem;
+}
+.topmenu a{
+	color: #FFFFFF;
+}
+.topmenu-icon a p{
+	margin-right: .6rem;
+	float: right;
+}
+.topmenu-icon a img{
+	width: .58rem;
+	height: .58rem;
+	margin: 0.26rem 0rem .2rem 0rem;
+	width: .58rem;
+	height: .58rem;
+	float: left;
+	
+}
+.topmenu-title{
+	width: 6rem;
+}
+#header{
+	margin-top: 1.17rem;
+	height: 4.61rem;
+	widows: 10rem;
+}
+.search{
+	height: .77rem;
+	width: 9.6rem;
+	margin: .1rem .2rem;
+	margin-top: 1.27rem;
+	background-color: #f2f2f2;
+	border-radius: .45rem;
+}
+.search input{
+	color: #999;
+	width: 9rem;
+	margin: 0rem .3rem;
+	font-size: .37rem;
+	height: .77rem;
+	line-height: .77rem;
+	background-color:#F2F2F2;
+	border: none;
+	float: right;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-size: .58rem .58rem;
+	background-position: .16rem;
+	text-align: center;
+}
+.banner{
+	height: 3.64rem;
+}
+.banner img{
+	width:10rem;
+	height: 3.64rem;
+}
+.icon{
+	height: 4.2rem; 
+	margin: .3rem 0rem;
+}
+.icon li{
+	width: 1.84rem;
+	height: 2.1rem;
+	float: left;
+}
+.icon li a p{
+	font-size: .33rem;
+	color: #000000;
+	margin: 0rem .53rem;
+}
+.icon li a img{
+	width: 1.25rem;
+	height: 1.25rem;	
+	margin: .1rem .295rem 0rem .295rem;
+}
+.word{
+	width: 9.2rem;
+	font-size: .37rem;
+}
+.word li {
+	height:2.05rem;
+	border-bottom:.02rem solid #A2A2A2 ;
+}
+.word li a img{
+	width: 2.05rem;
+	height: 1.5rem;
+	float: left;
+	margin: .25rem .25rem .25rem 0rem;
+	border-radius: 5px;
+}
+.word-content{
+	height: .9rem;
+	margin: .25rem 0rem;
+}
+.word-content a{
+	display: block;
+	width: 6.8rem;
+	height: 1rem;
+	color: black;
+	text-decoration: none;
+	white-space: pre-wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.word-copy{
+	font-size: .26rem;
+	height: .5rem;
+	line-height: .5rem;
+	color: #a2a2a2;
+}
+.word-copy li{
+	height: .5rem;
+	border: none;
+	margin-right: .1rem;
+}
+.word-copy li span{
+	margin-left: .1rem;
+}
+.logon{
+	font-size: .4rem;
+	border: none;
+}
+.logon li{
+	height: 1.17rem;
+	line-height: 1.17rem;
+	border-bottom: .02rem solid #A2A2A2;
+}
+.logon li p{
+	float: left;
+}
+.logon .input li input{
+	font-size: .4rem;
+	height: .77rem;
+	width: 2.5rem;
+	margin: 0.2rem 0rem;
+	border: none;
+	float: right;
+	color: #c3c3c3;
+}
+.logon select{
+	width: 2rem;
+	height: .77rem;
+	font-size: .33rem;
+	margin: 0.2rem 0rem;
+	border: none;
+	float: right;
+	color: #c3c3c3;
+}
+.logon button{
+	width: 4.6rem;
+	height: .85rem;
+	margin: .4rem 2.3rem;
+	font-size: .4rem;
+	border-radius: .13rem;
+	border: .02rem #000000 solid;
+	background-color: #f2f2f2;
+}
+.double-pic{
+	width: 10rem;
+	margin-bottom: 1.9rem;
+	height: 24.2rem;
+}
+.double-pic li{
+	width: 4.7rem;
+	height: 8rem;
+	float: left;
+	margin: .15rem;
+	background-color: #F2F2F2;
+	border-radius: .2rem;
+}
+.double-pic a p{
+	font-size: .37rem;
+	color: #000000;
+	width: 4.7rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.double-pic span{
+	font-size: .42rem;
+	color: red;
+	float: right;
+	margin: .2rem;
+}
+.double-pic img{
+	width: 4.7rem;
+	height: 6.4rem;
+	border-radius: .2rem;
+}
+.price{
+	color: red;
+	font-size: .42rem;
+}

@@ -1,0 +1,20 @@
+body {
+	/*background-color: lightblue;*/
+	margin-top: 35 px;
+	margin-left: 25 px;/*上右下左的顺序*/
+	font-size: 25 px;
+	color: white;
+	font-family: Comic Sans MS,"微软雅黑";
+/*	先写英文字体，再写中文字体，会优先匹配英文字体，但是在英文字体中找不到中文字符，这样中文就会自动使用后写的中文字体了。*/
+	line-height: 25px;
+	background-image: url(../img/bg.jpg);/*多个属性合并在一起，中间空格空开*/
+	/*background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: repeat-xy;*/
+	background-repeat: no-repeat;
+	/*background-position: center 1px;*/
+	/*background-position: left top;
+background-position: right top;*/
+	/*background-position: left bottom;
+background-attachment: fixed;*/
+}

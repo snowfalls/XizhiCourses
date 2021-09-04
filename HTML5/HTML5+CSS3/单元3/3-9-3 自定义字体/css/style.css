@@ -1,0 +1,20 @@
+body {
+	font-size: 36px;
+}
+
+@font-face {
+	font-family: 'hope';
+	src: url('../font/粗活意简.ttf');
+}
+
+.one {
+	font-family: "汉仪娃娃篆简";
+}
+
+.two {
+	font-family: "hope";
+}
+
+.three {
+	font-family: Condiment, cursive;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>html表单基础</title>
+		<style type="text/css">
+			li {
+				margin: 15px 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form action="">
+			<h1>html5表单基础</h1>
+			<h3>常用标签</h3>
+			<ul>
+				<li>用户：
+					<input type="text" name="user"></li>
+				<li>密码：
+					<input type="password" name="password" maxlength="15"></li>
+
+				<li><label><input name="sex" type="radio" value="male" checked />男性</label>
+					<label><input type="radio" name="sex" value="female" />女性</label></li>
+				<li><label><input type="radio" name="organization" value="people" />群众</label>
+					<label><input name="organization" type="radio" value="gcd" checked />团员</label></li>
+
+				<li><label><input name="hobby" type="checkbox" value="A" />篮球</label>
+					<label><input name="hobby" type="checkbox" value="B" checked />足球</label>
+					<label><input name="hobby" type="checkbox" value="C" />羽毛球</label>
+					<label><input name="hobby" type="checkbox" value="D" />乒乓球</label> </li>
+				<li>
+					<select>
+						<option value="1"> 上海</option>
+						<option value="2" selected> 广州市</option>
+						<option value="3"> 深圳</option>
+						<option value="4"> 北京</option>
+					</select>
+				</li>
+				<li>
+					<select size="3">
+						<option value="1"> 上海</option>
+						<option value="2" selected> 广州市</option>
+						<option value="3"> 深圳</option>
+						<option value="4"> 北京</option>
+					</select>
+				</li>
+				<li><input type="file" name="yourfile"></li>
+
+				<li><input type="submit" value="提交"></li>
+				<li><input type="reset" value="重置"></li>
+				
+				<h3>input标签</h3>
+				<li>
+					<label for="email">email：</label>
+					<input type="email" required autofocus name="email" id="email" placeholder="xx@xx.com">
+				</li>
+				<li>
+					<label for="username-search">生日：</label>
+					<input type="date" min="1980-01-01" max="2011-3-16" name="birthday" id="birthday" value="1982-10-10">
+				</li>
+					<li>
+					<label for="blog">博客：</label>
+					<input type="url" name="blog" placeholder="http://xxxxx" id="blog">
+				</li>
+				<li>
+					<label for="mobile">手机：</label>
+					<input type="tel" name="mobile" pattern="^1[3458]{1}[0-9]{9}$" id="mobile" placeholder="1xxxxxxxxxx">
+				</li>
+				<li>
+					<label id="label-working-year" for="working-year">工作年限：</label>
+					<input type="range" min="1" step="1" max="20" name="slider" name="working-year" id="working-year" placeholder="您的工作年限" value="3">
+				</li>
+				<li>
+					<label for="age">年龄：</label>
+					<input type="number" name="age" id="age" autocomplete="off" placeholder="数字">
+				</li>
+				<li>
+					<label for="avatar">头像：</label>
+					<input type="image" src="img/user.png" name="avatar" id="avatar" placeholder="点击选择头像">
+				</li>
+			</ul>
+		</form>
+
+	</body>
+
+	</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>细边框表格</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<table width="800" border="1" cellspacing="5" cellpadding="5">
+			<thead>
+				<tr>
+					<th colspan="3">合并表头</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="200">第1行第1列</td>
+					<td width="200">第1行第2列</td>
+					<td width="200">第1行第3列</td>
+				</tr>
+				<tr>
+					<td>第2行第1列</td>
+					<td>第2行第2列</td>
+					<td>第2行第3列</td>
+				</tr>
+				<tr>
+					<td>第3行第1列</td>
+					<td>第3行第2列</td>
+					<td>第3行第3列</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>表脚</td>
+					<td>表脚</td>
+					<td>表脚</td>
+				</tr>
+			</tfoot>
+		</table><br/>
+		<table width="800" border="1" cellspacing="5" cellpadding="5">
+			<thead>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="3">第1行第1列</td>
+					<td width="200">第1行第2列</td>
+					<td width="200">第1行第3列</td>
+				</tr>
+				<tr>
+					<td>第2行第2列</td>
+					<td>第2行第3列</td>
+				</tr>
+				<tr>
+					<td>第3行第2列</td>
+					<td>第3行第3列</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>表脚</td>
+					<td>表脚</td>
+					<td>表脚</td>
+				</tr>
+			</tfoot>
+		</table><br/>
+		<table width="800" border="1" cellspacing="5" cellpadding="5">
+			<thead>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="200">第1行第1列</td>
+					<td colspan="2" rowspan="2">合并两行两列</td>
+				</tr>
+				<tr>
+					<td>第2行第1列</td>
+				</tr>
+				<tr>
+					<td>第3行第1列</td>
+					<td>第3行第2列</td>
+					<td>第3行第3列</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>表脚</td>
+					<td>表脚</td>
+					<td>表脚</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+
+</html>

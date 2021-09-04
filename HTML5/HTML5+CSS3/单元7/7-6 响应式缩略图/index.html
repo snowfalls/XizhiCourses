@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title></title>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!--class="col-xs-6 col-md-3"这个是响应式网格的语法， 
+		你可以这样认为，当屏幕为小屏幕(<768px)时自动使用class="col-xs-6" 
+			当屏幕为中屏(>=768px)时自动使用 class="col-md-3" 
+			BootStrap总共分为12列，
+			上面的代码表示在极小屏幕时每6份(占一半)，即6，中大屏幕是占3份-->
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<a href="#" class="thumbnail">
+					<img src="img/img.png" alt="">
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<a href="#" class="thumbnail">
+					<img src="img/img.png" alt="">
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<a href="#" class="thumbnail">
+					<img src="img/img.png" alt="">
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<a href="#" class="thumbnail">
+					<img src="img/img.png" alt="">
+				</a>
+			</div>
+		</div>
+		<h3>普通分页</h3>
+		<ul class="pagination">
+			<li>
+				<a href="#">&laquo;</a>
+			</li>
+			<li>
+				<a href="#">1</a>
+			</li>
+			<li>
+				<a href="#">2</a>
+			</li>
+			<li>
+				<a href="#">3</a>
+			</li>
+			<li>
+				<a href="#">4</a>
+			</li>
+			<li>
+				<a href="#">5</a>
+			</li>
+			<li>
+				<a href="#">&raquo;</a>
+			</li>
+		</ul>
+		<h3>激活分页</h3>
+		<ul class="pagination">
+			<li class="previous">
+				<a href="#">上页</a>
+			</li>
+			<li>
+				<a href="#">1</a>
+			</li>
+			<li class="disabled">
+				<a href="#">2</a>
+			</li>
+			<li class="active">
+				<a href="#">3</a>
+			</li>
+			<li>
+				<a href="#">4</a>
+			</li>
+			<li>
+				<a href="#">5</a>
+			</li>
+			<li class="next">
+				<a href="#">下页</a>
+			</li>
+		</ul>
+		<!--分页更多实例
+.pager	一个简单的分页链接，链接居中对齐
+.previous	.pager 中上一页的按钮样式，左对齐
+.next	.pager 中下一页的按钮样式，右对齐
+.disabled	禁用链接
+.pagination	分页链接
+.pagination-lg	更大尺寸的分页链接
+.pagination-sm	更小尺寸的分页链接
+.disabled	禁用链接
+.active	当前访问页面链接样式-->
+	</body>
+
+</html>

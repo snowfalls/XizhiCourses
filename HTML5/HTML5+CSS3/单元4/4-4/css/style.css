@@ -1,0 +1,20 @@
+/* CSS Document */
+.main{
+	width:200px;
+	height:200px;
+	position:absolute; /* 相对于浏览器边框进行定位 */
+	left:100px;
+	top:100px;
+	background-color: yellow;
+	z-index:30;
+}
+
+.content{
+	width:200px;
+	height:200px;
+	position:relative; /* 相对于body元素进行定位 */
+	left:100px;
+	top:100px;
+	background-color: green;
+	z-index:20;
+}

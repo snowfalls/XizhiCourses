@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>内联式、嵌入式、外部式样式</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+			<!--
+			/*body{
+				font-size: 20px;
+				font-family: "微软雅黑";
+			text-decoration: none;*/
+			
+			a {
+				text-decoration: underline;
+			}
+			/*}*/
+			
+			-->
+		</style>
+	</head>
+
+	<body>
+		<h1>内联式、嵌入式、外部式样式</h1>
+		<h3>内联式</h3>
+		<p>内联式css样式表就是把css代码直接写在现有的HTML标签（如p,span...etc）中，如：&lt;p style="color:red;font-size:12px"&gt;这里文字是红色。&lt;/p&gt; 注意要写在元素的开始标签里，下面这种写法是错误的： &lt;p&gt;这里文字是红色。&lt;/pstyle="color:red;font-size:12px"&gt; 并且css样式代码要写在style=""双引号中。
+		</p>
+		<h3>嵌入式</h3>
+		<p>嵌入式css样式，就是可以把css样式代码写在&lt;style type="text/css"&gt;&lt;/style&gt;标签之间。如图代码将把多个&lt;span&gt;标签中的文字统一设置为红色： 嵌入式css样式必须写在&lt;style&gt;&lt;/style&gt;之间，并且一般情况下嵌入式css样式写在&lt;head&gt;&lt;/head&gt;之间。
+
+		</p>
+		<h3>外部式</h3>
+		<p>外部式css样式(也可称为外联式)就是把css代码写一个单独的外部文件中，这个css样式文件以“.css”为扩展名，在&lt;head&gt;内（不是在&lt;style&gt;标签内）使用&lt;link&gt;标签将css样式文件链接到HTML文件内，如下面代码： &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt; css样式文件名称以有意义的英文字母命名，如 main.css。 rel="stylesheet" type="text/css" 是固定写法不可修改。 &lt;link&gt;标签位置一般写在&lt;head&gt;标签之内。
+		</p>
+	</body>
+
+</html>

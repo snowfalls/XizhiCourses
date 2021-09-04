@@ -1,0 +1,21 @@
+.main{
+	width:960px;
+	height: 500px;
+	background: red;
+}
+.sidebar{
+	width: 160px;
+	height:200px;
+	background-color: blue;
+}
+.content{
+	width:780px;
+	height: 200px;
+	background-color: green;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}

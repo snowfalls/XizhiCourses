@@ -1,0 +1,40 @@
+/* CSS Document */
+.top{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:50px;
+	background-color: pink;
+	border-bottom: 2px solid red;
+	text-align: center;
+}
+
+.bottom{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:50px;
+	background-color: pink;
+	border-top: 2px solid red;
+	text-align: center;
+}
+
+.left{
+	position:fixed;
+	left:0;
+	width:100px;
+	height:100%;
+	background-color: pink;
+	border-right: 2px solid red;
+	text-align: center;	
+}
+
+.right{
+	position:fixed;
+	right:0;
+	width:100px;
+	height:100%;
+	background-color: pink;
+	border-left: 2px solid red;
+	text-align: center;	
+}

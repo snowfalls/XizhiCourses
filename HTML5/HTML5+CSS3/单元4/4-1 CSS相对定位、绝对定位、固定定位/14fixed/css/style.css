@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.top {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #efefef;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #efefef;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}
+
+.left {
+	position: fixed;
+	left: 0;
+	width: 100px;
+	height: 100%;
+	background-color: #efefef;
+	border-right: 1px solid #ccc;
+}
+
+.right {
+	position: fixed;
+	right: 0;
+	width: 100px;
+	height: 100%;
+	background-color: #efefef;
+	border-left: 1px solid #ccc;
+}
