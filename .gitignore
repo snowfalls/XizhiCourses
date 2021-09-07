@@ -2,5 +2,6 @@
 *.out
 *.i
 *.json
+*.xml
 __pycache__
 .gitignore
