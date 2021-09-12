@@ -6,7 +6,8 @@ with open('2.txt', 'r', encoding='utf-8') as f:
 
 cut_text = " ".join(jieba.cut(text))
 cloud = WordCloud(
-    font_path = "d:\粗活意简.ttf",
+    # font_path = "d:\粗活意简.ttf", if the file doesn't exist, just use the english words in docx
+    # if use the chinese words in docx, the ttf file and the line should be executed.
     background_color = "white",
     max_words = 4000,
     max_font_size = 60

@@ -1,0 +1,32 @@
+matplotlib
+python-docx
+cv2 (Unofficial pre-built OpenCV packages for Python.)
+pip install opencv-python
+pip install opencv-contrib-python
+import cv2
+1
+2
+3
+2. numpy (NumPy is the fundamental package for array computing with Python.)
+pip install numpy
+
+import numpy as np
+hist, bin_edges = np.histogram(ndarray, bins)  # 频数，分箱的边界（默认）
+n, bins, patches = plt.hist(hist.flatten(), bins=bin_edges, density=1, edgecolor='None', facecolor='r', alpha=0.7, histtype='bar')  ## flatten()：将二维数组转化为一维数组
+plt.show()  # display histogram
+1
+2
+3
+4
+5
+6
+3. Pillow (python2.x中为PIL, Python Imaging Library (Fork))
+pip install Pillow
+from PIL import Image
+from PIL.Image import core as _imaging
+1
+2
+3
+4. matplotlib (Python plotting package)
+pip install matplotlib
+ 	Successfully installed cycler-0.10.0 kiwisolver-1.1.0 matplotlib-3.0.3 pyparsing-2.4.0 python-dateutil-2.8.0 six-1.12.0

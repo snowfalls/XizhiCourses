@@ -1,0 +1,55 @@
+<!-- 注意：在使用该文件时必须通过网页服务器打开
+     具体方法如下：
+     在终端执行：
+    python -m http:server 8888
+    通过 http://localhost:8888进行访问 -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>奥运会奖牌统计</title>
+        <style>
+            .btn{
+                width: 160px;
+                height: 50px;
+                float:left;
+            }
+            .dis{
+                width: 1000px;
+                height: 500px;
+                border: 2px solid paleturquoise;
+                margin: 0 auto;
+                float: left;
+            }
+            .pie{
+                width: 500px;
+                height:500px;
+                border: 2px solid red;
+                margin: 0 auto;
+                float: left;
+            }
+            .sca{
+                width: 500px;
+                height: 500px;
+                border: 2px solid blue;
+                margin: 0 auto;
+                float: left;
+            }
+            .block{
+                width:1100px;
+                height:1000px;
+                border:black 2px solid;
+                float:left;
+            }
+        </style>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/echarts.min.js"></script>
+    </head>
+    <body>
+    <input type="button" value="开始绘图" class="btn">
+    <div class='block'>
+    <div class="dis"></div>
+    <div class="pie"></div>
+    <div class="sca"></div>
+    </body>
+</html>
