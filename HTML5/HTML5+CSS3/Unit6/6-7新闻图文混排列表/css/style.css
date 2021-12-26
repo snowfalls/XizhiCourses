@@ -4,14 +4,14 @@ body {
 
 a {
 	text-decoration: none;
-	color: #356AA0;
+	color: red;
 }
 
 img {
 	width: 150px;
 	height: 100px;
 	/*强制设置图片宽度*/
-	border-radius: 8px;
+	border-radius: 10px;
 	/*图片设置圆角*/
 }
 

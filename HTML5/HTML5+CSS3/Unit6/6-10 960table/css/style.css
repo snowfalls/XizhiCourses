@@ -1,0 +1,95 @@
+.container{
+    width: 960px;
+}
+
+.col-2-left{
+    margin-left: 10px;
+    width: 220px;
+    height: 300px;
+    float: left;
+    background-color: lightcoral;
+}
+
+.col-2-right{
+    margin-right: 10px;
+    width: 700px;
+    height: 300px;
+    float: right;
+    background-color: lightseagreen;
+}
+
+.col-3-1-left{
+    margin-left: 10px;
+    width: 220px;
+    height: 300px;
+    float: left;
+    background-color: lightcoral;
+}
+
+.col-3-1-middle{
+    margin-left: 20px;
+    width: 460px;
+    height: 300px;
+    float: left;
+    background-color: lightgreen;
+}
+
+.col-3-1-right{
+    margin-right: 10px;
+    width: 220px;
+    height: 300px;
+    float: right;
+    background-color: lightseagreen;
+}
+
+.col-3-2-left{
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: lightcoral;
+}
+
+.col-3-2-middle{
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: lightgreen;
+}
+
+.col-3-2-right{
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+    float: right;
+    background-color: lightseagreen;
+}
+
+.col-4-left{
+    margin-left: 10px;
+    width: 220px;
+    height: 300px;
+    float: left;
+    background-color: lightcoral;
+}
+
+.col-4-middle{
+    margin-left: 20px;
+    width: 220px;
+    height: 300px;
+    float: left;
+    background-color: lightgreen;
+}
+
+.col-4-right{
+    margin-right: 10px;
+    width: 220px;
+    height: 300px;
+    float: right;
+    background-color: lightseagreen;
+}
+
+.clear{
+    clear:both;
+}

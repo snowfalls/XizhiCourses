@@ -1,0 +1,76 @@
+.box{
+	width: 300px;
+	height: 150px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+.list{
+	width: 300px;
+	height: 150px;
+	line-height: 150px;
+	background: #ddd;
+	font-size: 80px;
+	text-align: center;
+}
+
+.anchor{
+	width: 300px;
+	padding-top: 10px;
+	text-align: right;
+}
+
+.click{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	background: #f7f7f7;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+.click:hover{
+	background: #eee;
+	color: #345;
+}
+
+#box{
+	width: 300px;
+	height: 150px;
+}
+
+#tab_nav{
+	margin: 0;
+	padding: 0;
+	height: 25px;
+	line-height: 24px;
+}
+
+#tab_nav li{
+	float: left;
+	margin: 0 10px 0 0;
+	list-style: none;
+	border: 1px solid #999;
+	border-bottom: none;
+	height: 24px;
+	width: 60px;
+	text-align: center;
+}
+
+#tab_content{
+	width: 300px;
+	height: 150px;
+	border: 1px solid #999;
+	text-align: center;
+	overflow: hidden;
+}
+
+#t_1,#t_2,#t_3{
+	width: 100%;
+	height: 150px;
+}
