@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>通过HTML标签属性绑定事件处理程序示例</title>
+        <style type="text/css">
+            .testDiv{
+                height: 200px;
+                width: 200px;
+                background-color: green;
+            }
+        </style>
+        <script type="text/javascript">
+            function upperCase() {
+                var t = document.getElementById("fname").value;
+                document.getElementById("fname").value = t.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+        请输入您的姓名：
+        <input id="fname" type="text" onblur="upperCase()">
+    </body>
+</html> 
