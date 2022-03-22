@@ -1,0 +1,128 @@
+<!-- 有bug！！！-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<script type="text/javascript" src="../jquery-3.6.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			var len=$(".picBox li").length;
+			var startRollOne;
+			var previous_index;
+			var current_index; //将要显示的图片索引
+			$(".picBox li").fadeOut(0).eq(0).fadeIn(0); //隐藏所有，并显示第一个
+			 previous_index = 0; //正在显示的图片索引
+ 
+			$(".num li").mouseover(function () {
+				 current_index = $(".num li").index(this);
+				showImg(current_index);
+			});
+ 
+ 
+			$(".box").hover(function () {
+				clearInterval(startRollOne);
+			}, function () {
+				startRollOne = setInterval(function () {
+					current_index =previous_index+1;
+					if(current_index == len){
+						current_index = 0;
+					}
+					showImg(current_index);
+				},2000);
+			}).trigger("mouseleave");
+ 
+			function  showImg(num){
+				$(".picBox li").eq(previous_index).fadeOut(600).end().eq(num).fadeIn(600);//这里使用siblings（）有bug，使用end（）可以，为什么
+				$(".num li").removeClass("on").eq(num).addClass("on");
+				previous_index=num;
+			}
+		});
+	</script>
+	<style>
+		.box{
+			width: 1200px;
+			height: 560px;
+			margin: 160px auto;
+			position: relative;
+		}
+		.box p{
+			text-align: center;
+		}
+		.picBox{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			width: 1500px;
+			position: absolute;
+		}
+		.picBox:hover{
+			cursor: pointer;
+		}
+		.picBox li{
+			position: absolute;
+			display: none;
+			top:0px;
+			left:0px;
+		}
+		.dispoint{
+			display: none;
+		}
+		.picBox img{
+			width: 1200px;
+			height: 540px;
+		}
+		.num {
+			list-style: none;
+			position: absolute;
+			bottom: 1px;
+			right: 10px;
+		}
+		.num li{
+			text-align: center;
+			width: 15px;
+			height:15px;
+			background-color: white;
+			opacity: 1;
+			line-height: 18px;
+			float: left;
+			border: red solid 1px;
+			margin-left: 2px;
+			font-size: 15px;
+		}
+		.num li.on{
+			text-align: center;
+			width: 20px;
+			height:20px;
+			background-color: red;
+			opacity: 1;
+			font-size: 18px;
+			line-height: 20px;
+			float: left;
+			border: red solid 1px;
+			margin-left: 2px;
+		}
+	</style>
+</head>
+<body>
+<div class="box">
+	<p> 图片轮播</p>
+	<ul class="picBox">
+		<li><img src="img/0.webp" /></li>
+		<li><img src="img/1.webp" /></li>
+		<li><img src="img/2.webp" /></li>
+		<li><img src="img/3.webp" /></li>
+		<li><img src="img/4.webp" /></li>
+	</ul>
+	<ul class="num">
+		<li class="on">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+ 
+</div>
+</body>
+</html>

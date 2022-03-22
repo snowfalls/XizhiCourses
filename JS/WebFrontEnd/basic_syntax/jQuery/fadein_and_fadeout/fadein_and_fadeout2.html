@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        ul {
+            list-style: none;
+        }
+ 
+        div {
+            position: relative;
+            margin: 0 auto;
+            width: 590px;
+            height: 470px;
+            overflow: hidden;
+            top: 50px;
+        }
+        
+        .btn_leftBtn {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 207px;
+            left: 0px;
+        }
+ 
+        .btn_rightBtn {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 207px;
+            right: 0px;
+        }
+    </style>
+    <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="sliderPage">
+            <li><a href=""><img src="img/0.webp"></a></li>
+            <li><a href=""><img src="img/1.webp"></a></li>
+            <li><a href=""><img src="img/2.webp"></a></li>
+            <li><a href=""><img src="img/3.webp"></a></li>
+            <li><a href=""><img src="img/4.webp"></a></li>
+            <!-- <li><a href=""><img src="img/jd06.jpg"></a></li>
+            <li><a href=""><img src="img/jd07.jpg"></a></li>
+            <li><a href=""><img src="img/jd08.jpg"></a></li> -->
+        </ul>
+        <div class="btn_leftBtn">
+            <img src="./img/slide-btnl.png">
+        </div>
+        <div class="btn_rightBtn">
+            <img src="./img/slide-btnR.png">
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var cnt = 0;    
+            $(".wrapper .btn_leftBtn").click(function() {
+                cnt++;
+                if (cnt == $(".wrapper li").length) {
+                    cnt = 0;
+                }
+                $(".wrapper li").eq(cnt).fadeIn("fast").siblings("li").fadeOut();
+            });
+ 
+            $(".wrapper .btn_rightBtn").click(function(){
+                cnt--;
+                if (cnt == -1) {
+                    cnt = $(".wrapper li").length - 1;
+                }
+                $(".wrapper li").eq(cnt).fadeIn("fast").siblings("li").fadeOut();
+            });    
+        })
+    </script>
+</body>
+</html>
