@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function f1() {
+                $ ("div").fadeOut(4000);
+            }
+
+            function f2() {
+                $("div").fadeIn(4000);
+                $("#two").fadeTo(2000, 0.3);
+            }
+
+            function f3() {
+                $("div").fadeToggle(2000);
+            }
+        </script>
+        <style type="text/css">
+            div{width: 300px; height: 200px; background-color: blue;}
+        </style>
+    </head>
+    <body>
+        <div id="two">duck and dog</div>
+        <input type="button" value="隐藏" onclick="f1()" />
+        <input type="button" value="显示" onclick="f2()" />
+        <input type="button" value="开关效果" onclick="f3()" />
+    </body>
+</html>
