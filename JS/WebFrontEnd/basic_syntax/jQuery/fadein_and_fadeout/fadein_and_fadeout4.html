@@ -12,25 +12,28 @@
 			var startRollOne;
 			var previous_index;
 			var current_index; //将要显示的图片索引
+
 			$(".picBox li").fadeOut(0).eq(0).fadeIn(0); //隐藏所有，并显示第一个
-			 previous_index = 0; //正在显示的图片索引
+			previous_index = 0; //正在显示的图片索引
  
-			$(".num li").mouseover(function () {
-				 current_index = $(".num li").index(this);
+			$(".num li").mouseover(function () { //鼠标悬停在num上方的时候进行的操作
+				current_index = $(".num li").index(this);
 				showImg(current_index);
 			});
  
  
-			$(".box").hover(function () {
-				clearInterval(startRollOne);
-			}, function () {
-				startRollOne = setInterval(function () {
-					current_index =previous_index+1;
-					if(current_index == len){
-						current_index = 0;
-					}
-					showImg(current_index);
-				},2000);
+			$(".box").hover(
+				function () {
+					clearInterval(startRollOne);
+				}, 
+				function () {
+					startRollOne = setInterval(function () {
+						current_index =previous_index+1;
+						if(current_index == len){
+							current_index = 0;
+						}
+						showImg(current_index);
+					},2000);
 			}).trigger("mouseleave");
  
 			function  showImg(num){
