@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>链接方式</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script language="JavaScript" src="js/string_object.js">
+            function check() {
+                var flag = true;
+                var pass = document.getElementById("pass").value;
+                for (var i = 0; i < pass.length; i++) {
+                    if ((pass.charAt(i) < "0") || (pass.charAt(i) > '9')) {
+                        flag = false;
+                    }
+                }
+                if (flag) {
+                    alert("输入合法");
+                }
+                else {
+                    alert("输入不合法，只能是数字");
+                }
+            }
+        </script>
+        请输入密码:<input type="text" id="pass" placeholder="请输入密码，必须是数字" size="30"><br/>
+        <input type="button" value="验证" onclick="check()">
+    </body>
+</html>
