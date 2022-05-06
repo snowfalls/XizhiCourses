@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>圆的面积和周长计算</title>
+	<script type="text/javascript">
+		function area() {
+			var r = parseInt(document.getElementById("radius").value);
+			var a = Math.PI * r * r;
+			alert(a);
+		}
+		function circle_len() {
+			var r = parseInt(document.getElementById("radius").value);
+			var l = Math.PI * r * 2;
+			alert(l);
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="请输入半径" value="0" id="radius"><br/>
+	<input type="button" value="计算面积" onclick="area()"><br/>
+	<input type="button" value="计算周长" onclick="circle_len()"><br/>
+</body>
+</html>
