@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../../jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("#jquery").attr("href", "http://www.baidu.com");
+			});
+		});
+	</script>
+</head>
+<body>
+	<p><a href="http://www.jquery.com" id="jquery">jQuery.com</a></p>
+	<button>改变href值</button>
+	<p>把鼠标指针移动到链接上，或者单击该链接，查看已经改变的href值</p>
+</body>
+</html>
