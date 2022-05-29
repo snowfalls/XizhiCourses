@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		#div1 {
+			background-color: green;
+			height: 1000px;
+			width: 200px;
+			font-size: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="../../jquery-3.6.0.js"></script>
+	<title>DOM第2层模型</title>
+	<script type="text/javascript">
+		$(function() {
+			var ele = $('#sid')[0];
+			ele.addEventListener('click', function(event){say('1')}, false);
+			ele.addEventListener('click', function(event){say('2')}, false);
+			ele.addEventListener('click', function(event){say('3')}, false);
+		});
+		function say(text) {
+			$('#div1').append('<div>' + text + '</div>');
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="addEventListenser" id="sid">
+	<div id="div1"></div>
+</body>
+</html>

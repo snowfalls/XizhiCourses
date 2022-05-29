@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>复合事件</title>
+	<style type="text/css">
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul {
+			list-style: none;
+		}
+		ul li {
+			width: 140px;
+		}
+		#menu_1 {
+			border: 1px dotted #666;
+			border-top: none;
+			padding: 0px 5px 5px 5px;
+		}
+		#menu_1 li {
+			margin: 5px 0px;
+		}
+		li.fli {
+			display: block;
+			float: left;
+			padding: 0px 10px;
+		}
+	</style>
+	<script type="text/javascript" src="../../jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#myaccound").hover(
+				function() {
+					$('#menu_1').css('display', 'block');
+				},
+				function() {
+					$('#menu_1').css('display', 'none');
+				});
+		});
+	</script>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li class="fli"><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow"
+				rel="external nofollow" rel="external nofollow" rel="external nofollow">我的订单</a></li>
+			<li class="fli" id="myaccound">
+				<a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow"
+				rel="external nofollow" rel="external nofollow" rel="external nofollow">我的宜美惠</a>
+				<ul id="menu_1" style="display: none;">
+					<a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow"
+					rel="external nofollow" rel="external nofollow" rel="external nofollow">我的优惠券</a><br>
+					<a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow"
+					rel="external nofollow" rel="external nofollow" rel="external nofollow">收藏夹</a><br>
+					<a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow"
+					rel="external nofollow" rel="external nofollow" rel="external nofollow">短信息</a>
+				</ul>
+			</li>
+			<li class="fli"><a href="#" rel="external nofollow" rel="external nofollow" rel="external nofollow"
+				rel="external nofollow" rel="external nofollow" rel="external nofollow">我的网站导航</a></li>
+		</ul>
+	</div>
+</body>
+</html>
