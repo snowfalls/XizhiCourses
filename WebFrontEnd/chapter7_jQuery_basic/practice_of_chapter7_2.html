@@ -1,0 +1,91 @@
+ <!-- 该代码来源于网络 -->
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>OA</title>
+        <style type="text/css">
+            *{ margin: 0; padding: 0; list-style-type: none; text-decoration: none;}
+            .wmnav{
+                background:#f2f7f8;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                border-bottom: 2px  solid #040404;
+            }
+            .wmnav .navitem{
+                position: relative;
+                float: left;
+                background:#e8e8e8;
+                width: 120px;
+               
+            }
+            .wmnav .active{
+                background: #d2eef7  !important;
+            }
+            .wmnav .navitem:nth-child(odd){
+                background: #f1f1f1;
+            }
+            .navitem a:hover{
+                background:#d2eef7;
+                cursor: pointer;
+            }
+            .wmnav .navitem a{
+                display: block;
+            }
+            .wlmnav{
+                display: none;
+                position: absolute;
+                top: 42px;
+                background: #f1f1f1;
+                width: 120px;
+                line-height: 40px;
+            }
+            .wlmnav .navitem:nth-child(odd){
+               background:#d8d7d7;;
+            }
+        </style>
+        <script type="text/javascript" src="../../jquery-3.6.0.js" ></script>
+        <script type="text/javascript">
+            $(function () {
+                //一级导航点击事件
+                $(".navitem > a").click(function () {
+                    $(".wmnav .navitem").removeClass("active");
+                    $(this).parent().addClass("active");
+                    var wlmnav = $(this).parents(".wlmnav");
+                    if(wlmnav)
+                       wlmnav.parent().addClass("active");
+                });
+                //二级导航弹出
+                $(".wlm").hover(function(){ 
+                    $(this).children("a").eq(0).next().show();
+                },function(){
+                    $(this).children("a").eq(0).next().hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wmhead">
+            <ul class ="wmnav">
+                <li class="navitem active"><a href="#">导航导航</a></li>
+                <li class="navitem wlm">
+                    <a href="#">导航导航</a>
+                    <ul class="wlmnav">
+                        <li class="navitem"><a href="#">导航导航2</a></li>
+                        <li class="navitem"><a href="#">导航导航2</a></li>
+                        <li class="navitem"><a href="#">导航导航2</a></li>
+                    </ul>
+                </li>
+                <li class="navitem"><a href="#">导航导航</a></li>
+                <li class="navitem"><a href="#">导航导航</a></li>
+                <li class="navitem"><a href="#">导航导航</a></li>
+                <li class="navitem"><a href="#">导航导航</a></li>
+            </ul>
+        </div>
+        <div class="wmbody"></div>
+        <div class="wmtail"></div>
+    </body>
+</html>
