@@ -10,6 +10,12 @@
 			width: 200px;
 			font-size: 20px;
 		}
+		#div2 {
+			background-color: red;
+			height: 30px;
+			width: 100px;
+			font-size: 20px;
+		}
 	</style>
 	<script type="text/javascript" src="../../jquery-3.6.0.js"></script>
 	<title>DOM第2层模型</title>
@@ -21,7 +27,7 @@
 			ele.addEventListener('click', function(event){say('3')}, false);
 		});
 		function say(text) {
-			$('#div1').append('<div>' + text + '</div>');
+			$('#div1').append("<div id='div2'>" + text + '</div>');
 		}
 	</script>
 </head>

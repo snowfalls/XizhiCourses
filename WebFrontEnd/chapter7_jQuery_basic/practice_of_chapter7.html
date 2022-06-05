@@ -1,0 +1,57 @@
+<!-- 这是课本第198页实训的代码，但是这个代码执行有问题，需要后续进行改进，后面有时间了可以进行改进 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>实训1</title>
+	<style type="text/css">
+		.hover #indexhall a.nav_link {
+			color: blue;
+		}
+	</style>
+	<script type="text/javascript" src="../../jquery-3.6.0.js"></script>
+</head>
+<body>
+	<div class="hdnav_top">
+		<ul id="nav_menu" class="cen nav_menu f_white">
+			<li id="indexhall"><a class="nav_link" href="">首页</a></li>
+			<li id="womenhall"><a class="nav_link" href="">女鞋馆</a>
+				<div id="womenhall_menu" class="pop_menu f_grey"></div>
+				<dl class="bot_line">
+					<dt class="Red">热门</dt>
+					<dd><a href="http://www.yougou.com/s-1LACAIAD1.html#ref=all&amp;po=menu_tc201"><font color="#ff0000">秋冬新品</font></a>|
+						<a href="http://www.yougou.com/s-1LACAIAD1.html#ref=all&amp;po=menu_tc202">雪地靴</a>|
+						<a href="http://www.yougou.com/s-1LACAIAD1.html#ref=all&amp;po=menu_tc203">满帮</a>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		if(document.getElementById('nav_menu')) {
+			var navMenu = $('#nav_menu > li:lt(9)');
+			$('#nav_menu').one('mouseover', function(){
+				$(this).find('img').each(function() {
+					var src = this.getAttribute('src2');
+					$(this).attr('src', src);
+				})
+			});
+			navMenu.hover(function() {
+				if(this.id == 'indexhall') {
+					this.className = 'curron';
+				}else {
+					$(this).addClass('hover');
+				}
+			},
+			function() {
+				if(this.id == 'indexhall') {
+					this.className = '';
+				}else {
+					$(this).removeClass('hover');
+				}
+			});
+		}
+	</script>
+</body>
+</html>
