@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="../../jquery-3.6.0.js"></script>
+
+</head>
+<body>
+    <p class="num_p" title="欢迎访问脚本之家">欢迎访问脚本之家</p>
+    <ul class="nm_ul">
+    	<li title="PHP编程">简单易懂的PHP编程</li>
+    	<li title="JavaScript编程">简单易懂的JavaScript编程</li>
+    	<li title="JQuery编程">简单易懂的JQuery编程</li>
+    </ul>
+    <script type="text/javascript">
+        var $li_1 = $("<li>新增节点:数据结构</li>");
+        var $li_2 = $("<li>新增节点:设计模式</li>");
+        var $parent = $(".nm_ul");
+        $parent.append($li_1);
+        $parent.append($li_2);
+	</script>
+</body>
+</html>
