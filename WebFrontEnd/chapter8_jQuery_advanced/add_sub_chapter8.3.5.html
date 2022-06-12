@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.panel {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #0050d0;
+			background: red;
+			cursor: pointer;
+			position: relative;
+		}
+		.content {
+			width: 100px;
+			height: 100px;
+			margin-top: 20px;
+			background: green;
+			position: relative;
+		}      
+	</style>
+	<title>隐藏和展示</title>
+	<script type="text/javascript" src="../../jquery.js"></script>
+	<script type="text/javascript">
+		// function f1() {
+		// 	$('#two').animate({right:"+=500px"}, 3000);
+		// }
+		// $(function() {
+		// 	$(".content").click(function() {
+		// 		$(this).animate({top:"+=50px"}, 3000);
+		// 	})
+		// });
+		// $(function() {
+		// 	$(".panel").click(function() {
+		// 		$(this).animate({left:"+=50px"}, 3000);
+		// 	})
+		// });
+		function f1() {
+			$(".panel").animate({left:"+=50px"}, 3000).animate({top:"+50px"}, 3000);
+		}
+
+		function f2() {
+			$(".content").animate({top:"+=50px"}, 3000);
+		}
+ 	</script>
+</head>
+<body>
+
+	<div class="panel" onclick="f1()"></div>
+	<div class="content" onclick="f2()"></div>
+</body>
+</html>

@@ -21,7 +21,7 @@
 			$("#two").fadeTo(2000, 0.3)
 		}
 		function f3() {
-			$("div").slideToggle(1000);
+			$("div").fadeToggle(2000);
 		}
 		$(function() {
 
@@ -29,7 +29,7 @@
  	</script>
 </head>
 <body>
-	<div>duck and dog</div>
+	<div id="two">duck and dog</div>
 	<input type="button" value="隐藏" onclick="f1()">
 	<input type="button" value="显示" onclick="f2()">
 	<input type="button" value="开关效果" onclick="f3()">
