@@ -11,3 +11,4 @@ jquery.js
 __pycache__
 .gitignore
 Python/BigDataVisualization/wordcloud/cloud.jpg
+*.jpg

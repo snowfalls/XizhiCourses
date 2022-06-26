@@ -34,7 +34,7 @@
 						}
 						showImg(current_index);
 					},2000);
-			}).trigger("mouseleave");
+			});
  
 			function  showImg(num){
 				$(".picBox li").eq(previous_index).fadeOut(600).end().eq(num).fadeIn(600);//这里使用siblings（）有bug，使用end（）可以，为什么
