@@ -3,6 +3,11 @@
 *.i
 *.json
 *.xml
+*.jpg
+*.jpeg
+*.png
+*.gif
+jquery.js
 __pycache__
 .gitignore
 Python/BigDataVisualization/wordcloud/cloud.jpg
