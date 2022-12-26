@@ -6,7 +6,7 @@ def matrix():
         arr.append([])
         for j in range(n):
             x = int(input("请输入"))
-            arr[i].appen(x)
+            arr[i].append(x)
     return arr
 
 a = matrix()
