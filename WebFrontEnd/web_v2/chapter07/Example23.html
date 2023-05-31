@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="dialog.css">
+</head>
+<body>
+  <div class="dialog" id="box">
+    <div class="dialog-title" id="drop">
+      <span>注册信息（可以拖曳）</span>
+      <div class="dialog-close" id="close">×</div>
+    </div>
+    <div class="dialog-body"></div>
+  </div>
+  <script>
+    var box = document.getElementById('box');
+    var drop = document.getElementById('drop');
+    // 鼠标按下时开启鼠标拖曳效果
+    drop.onmousedown = function (e) {
+      // 计算鼠标指针在div元素内的位置
+      var spaceX = e.pageX - box.offsetLeft;
+      var spaceY = e.pageY - box.offsetTop;
+      // 让div元素跟随鼠标指针移动
+      document.onmousemove = function (e) { 
+        // 设置div元素移动后的位置
+        box.style.left = e.pageX - spaceX + 'px';
+        box.style.top = e.pageY - spaceY + 'px';
+      };
+    };
+    // 鼠标释放时取消鼠标拖曳效果
+    document.onmouseup = function () {
+      document.onmousemove = null;
+    };
+    // 单击右上角的关闭按钮可关闭对话框
+    document.getElementById('close').onclick = function () {
+      box.style.display = 'none'; 
+    };
+  </script>
+</body>
+</html>

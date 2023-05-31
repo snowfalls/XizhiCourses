@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:3000/xml');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        console.log(xhr.responseXML);
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>

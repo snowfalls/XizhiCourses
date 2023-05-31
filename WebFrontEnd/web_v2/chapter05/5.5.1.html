@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(2 * Math.PI * 3);                 // 输出结果：18.84955592153876
+
+    console.log(Math.abs(-25));                   // 输出结果：25
+
+    console.log(Math.max(5, 3, 11, 6));           // 输出结果：11
+    console.log(Math.min(5, 3, 11, 6));           // 输出结果：3
+
+    var a = Math.pow(2, 4);
+    console.log(a);                               // 输出结果：16
+    console.log(Math.sqrt(a));                    // 输出结果：4
+
+    console.log(Math.ceil(1.1));            // 输出结果：2
+    console.log(Math.ceil(1.9));            // 输出结果：2
+    console.log(Math.floor(1.1));           // 输出结果：1
+    console.log(Math.floor(1.9));           // 输出结果：1
+
+    console.log(Math.round(1.1));           // 输出结果：1
+    console.log(Math.round(1.5));           // 输出结果：2
+    console.log(Math.round(1.9));           // 输出结果：2
+    console.log(Math.round(-1.5));          // 输出结果：-1（取较大值）
+    console.log(Math.round(-1.6));          // 输出结果：-2
+
+    console.log(Math.random());             // 输出结果：0.925045617789475
+
+    // 生成m到n之间的随机数（不包括n）
+    Math.random() * (n - m) + m;
+    // 生成m到n之间的随机整数
+    Math.floor(Math.random() * (n - m + 1) + m);
+    // 生成0到n之间的随机整数
+    Math.floor(Math.random() * (n + 1));
+    // 生成1到n之间的随机整数
+    Math.floor(Math.random() * n + 1);
+  </script>
+</body>
+</html>

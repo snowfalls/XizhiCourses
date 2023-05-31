@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="first">
+    <p>我是第1个div下的p元素</p>
+  </div>
+  <div id="second">
+    <p>我是第2个div下的p元素</p>
+  </div>
+  <script>
+    // 删除id为first元素的子元素
+    $('#first').empty();
+    // 删除id为second元素的子元素和本身
+    $('#second').remove();
+  </script>
+</body>
+</html>

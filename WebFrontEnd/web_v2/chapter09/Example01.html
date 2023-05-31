@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = prompt('请输入要验证的身份证号：')
+    var reg = /^[1-9]\d{5}(18|19|[23]\d)\d{2}(0[1-9]|1[0-2])([0-2][1-9]|10|20|30|31)\d{3}[0-9Xx]$/;
+    if (reg.test(str)) {
+      console.log('您输入的身份证号码合法');
+    } else {
+      console.log('您输入的身份证号码不合法');
+    }
+  </script>
+</body>
+</html>

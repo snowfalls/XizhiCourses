@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body { text-align: center; }
+    img { width: 205px; height: 200px; margin-bottom: 2px; }
+    button { display: block;  margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="images/1.jpg" title="火锅">
+    <button>选择</button>
+  </div>
+  <script>
+    var btn = document.querySelector('button'); // 获取button元素
+    var img = document.querySelector('img');    // 获取img元素
+    btn.onclick = function () {
+      img.src = 'images/selected.jpg';
+    };
+  </script>
+</body>
+<html>

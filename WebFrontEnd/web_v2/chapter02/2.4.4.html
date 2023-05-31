@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a, b;
+    a = 3, b = 2;
+    console.log(a, b);          // a = 3; b = 2;
+
+    a = 3, b = 2;
+    a += b;
+    console.log(a, b);          // a = 5; b = 2;
+
+    a = 'abc';
+    a += 'def';
+    console.log(a);             // a = 'abcdef'
+
+    a = 3, b = 2;
+    a -= b;
+    console.log(a, b);          // a = 1; b = 2;
+
+    a = 3, b = 2;
+    a *= b;
+    console.log(a, b);          // a = 6; b = 2;
+
+    a = 3, b = 2;
+    a /= b;
+    console.log(a, b);          // a = 1.5; b = 2;
+
+    a = 3, b = 2;
+    a %= b;
+    console.log(a, b);          // a = 1; b = 2;
+
+    a = 3; a **= 2;
+    console.log(a);             // a = 9
+
+    a = 9, b = 2;
+    a <<= b;
+    console.log(a, b);          // a = 36; b = 2;
+
+    a =- 9, b = 2; a >>= b;
+    console.log(a, b);          // a = -3; b = 2;
+
+    a = -9, b = 2;
+    a >>>= b;
+    console.log(a, b);          // a = 1073741821; b = 2;
+
+    a = 3, b = 9;
+    a &= b;
+    console.log(a, b);          // a = 1; b = 9;
+
+    a = 3, b = 9;
+    a ^= b;
+    console.log(a, b);          // a = 10; b = 9; 
+
+    a = 3, b = 9;
+    a |= b;
+    console.log(a, b);          // a = 11; b = 9;
+
+    var a = 3;
+    a += 2;                     // 相当于a = a + 2
+    console.log(a);             // 输出结果：5
+    a -= 2;                     // 相当于a = a - 2
+    console.log(a);             // 输出结果：3
+    a *= 2;                     // 相当于a = a * 2
+    console.log(a);             // 输出结果：6
+    a /= 2;                     // 相当于a = a / 2
+    console.log(a);             // 输出结果：3
+    a %= 2;                     // 相当于a = a % 2
+    console.log(a);             // 输出结果：1
+    a **= 2;                    // 相当于a = a ** 2
+    console.log(a);             // 输出结果：1
+
+    var a = '小明';
+    a += 18;
+    console.log(a);             // 输出结果：小明18
+  </script>
+</body>
+</html>

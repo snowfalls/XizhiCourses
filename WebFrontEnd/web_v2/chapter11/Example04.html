@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div>
+    <span>我是div标签下的span标签</span>
+  </div>
+  <input type="text" value="请输入内容">
+  <script>
+    // 获取元素的内容
+    console.log($('div').html());
+    console.log($('div').text());
+    console.log($('input').val());
+    
+    $('div').html('<span>我是内容</span> 我是div标签的内容');
+    $('div').text('我是span标签的内容');
+    $('input').val('123456');
+  </script>
+</body>
+</html>

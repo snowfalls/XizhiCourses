@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var flag1 = true;
+    var flag2 = false;
+
+    var oct = 032;     // 八进制表示的26
+    var dec = 26;      // 十进制数26
+    var hex = 0x1a;    // 十六进制表示的26
+
+    // 标准格式
+    var fnum1 = -7.26;
+    var fnum2 = 7.26;
+    // 科学记数法格式
+    var fnum3 = 3.14E6;    
+    var fnum4 = 8.96E-3;
+
+    console.log(Number.MAX_VALUE);        // 最大值：1.7976931348623157e+308
+    console.log(Number.MIN_VALUE);        // 最小值：5e-324
+
+    // 单引号字符串
+    var num = '';              // 表示空字符串
+    var slogan = '知识';       // 表示字符串'知识'
+    // 双引号字符串
+    var total = "";            // 表示空字符串
+    var str = "知识就是力量";   // 表示字符串"知识就是力量"
+
+    // 单引号中包含双引号
+    var color = '"red"blue';         // 字符串内容为"red"blue
+    // 双引号中包含单引号
+    var food = "'pizza'bread";       // 字符串内容为'pizza'bread
+    // 单引号中包含单引号
+    var say1 = 'I\'m ...';           // 字符串内容为I'm ...
+    // 双引号中包含双引号
+    var say2 = "\"Tom\"";            // 字符串内容为"Tom"
+
+    var a = null;
+    console.log(a);        // 输出结果：null
+
+    var a1;
+    console.log(a1);       // 输出结果：undefined
+
+    console.log(Number.MAX_VALUE * 2);        // 输出结果：Infinity
+    console.log(Number.MIN_VALUE * 2);        // 输出结果：-Infinity
+    console.log('aaa' - 2);                   // 输出结果：NaN
+
+    console.log(isNaN(2));            // 输出结果：false
+    console.log(isNaN('aaa'));        // 输出结果：true
+  </script>
+</body>
+</html>

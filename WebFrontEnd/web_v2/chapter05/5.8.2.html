@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = 'HelloWorld';
+    str.indexOf('o');        // 获取'o'在字符串中首次出现的索引，返回结果：4
+    str.lastIndexOf('o');    // 获取'o'在字符串中最后出现的索引，返回结果：6
+
+    var str = 'Apple';
+    console.log(str.charAt(2));            // 输出结果：p
+    console.log(str.charCodeAt(0));        // 输出结果：65（字符A的ASCII码为65）
+
+    var str = 'Hello';
+    var str1 = 'World';
+    console.log(str.concat(str1));         // 输出结果：HelloWorld
+
+    var str = 'HelloWorld';
+    // 利用slice()方法实现
+    console.log(str.slice(1, 3));          // 输出结果：el
+    console.log(str.slice(5));             // 输出结果：World
+    // 利用substring()方法实现
+    console.log(str.substring(1, 3));      // 输出结果：el
+    console.log(str.substring(5));         // 输出结果：World
+    // 利用substr()方法实现
+    console.log(str.substr(1, 2));         // 输出结果：el
+    console.log(str.substr(5));            // 输出结果：World
+
+    var str = 'HelloWorld';
+    console.log(str.toLowerCase());        // 输出结果：helloworld
+    console.log(str.toUpperCase());        // 输出结果：HELLOWORLD
+
+    var str = 'HelloWorld';
+    console.log(str.split('l'));            // 输出结果：(4) ["He", "", "oWor", "d"]
+    console.log(str.split('l', 3));         // 输出结果：(3) ["He", "", "oWor"]
+
+    var str = 'RainyDay and SunnyDay';
+    console.log(str.replace('Day', '天'));  // 输出结果：Rainy天 and SunnyDay
+  </script>
+</body>
+</html>

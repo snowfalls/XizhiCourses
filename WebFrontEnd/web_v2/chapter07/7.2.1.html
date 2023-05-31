@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div>1</div>
+  <div>2</div>
+  <script>
+    function getNextElementSibling(element) {
+      var el = element;
+      while (el = el.nextSibling) {
+        if (el.nodeType === Node.ELEMENT_NODE) {
+          return el;
+        }
+      }
+      return null;
+    }
+    var div = document.querySelector('div');
+    console.log(getNextElementSibling(div));
+  </script>
+</body>
+</html>

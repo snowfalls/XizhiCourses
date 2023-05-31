@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div id="tips"></div>
+  <div class="box">
+    <label>用户名：<input id="user" type="text"></label>
+    <label>密　码：<input id="pwd" type="password"></label>
+    <button type="button">登录</button>
+  </div>
+  <script>
+    var tips = document.getElementById('tips');
+    document.getElementById('user').onblur = blur;
+    document.getElementById('pwd').onblur = blur;
+    // 失去焦点时执行的函数
+    function blur() {
+      if (this.value === '') {
+        tips.style.display = 'block';
+        tips.innerHTML = '注意：输入内容不能为空! ';
+      } else {
+        tips.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

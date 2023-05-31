@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <a href="test.html">单击</a>
+  <script>
+    var a = document.querySelector('a');
+    a.onclick = function (e) {
+      var e = e || window.event;
+      e.preventDefault();       // 在新版浏览器中阻止默认行为
+      e.returnValue = false;    // 在早期版本IE浏览器中阻止默认行为
+    };
+  </script>
+</body>
+</html>

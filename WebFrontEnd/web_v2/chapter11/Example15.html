@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+  <style>
+    div { width: 100px; height: 100px; background-color: gray; }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script>
+    // 注册单击事件
+    $('div').click(function () {
+      $(this).css('width', '150px');
+    });
+    // 注册鼠标移出事件
+    $('div').mouseout(function () {
+      $(this).css('height', '200px');
+    });
+  </script>
+</body>
+</html>

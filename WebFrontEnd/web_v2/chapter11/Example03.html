@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <ul>
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+  </ul>
+  <script>
+    $('li').each(function (index, domEle) {
+      console.log('第' + (index + 1) + '个li对象：');
+      console.log(domEle);
+    });
+  </script>
+</body>
+</html>

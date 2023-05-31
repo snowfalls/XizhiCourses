@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div>
+    <span>用户名：</span><input type="text" id="username"><br>
+    <span>密码：</span><input type="password" id="pwd"><br>
+    <button>登录</button>
+  </div>
+  <script>
+    // 获取button元素
+    var obtn = document.getElementsByTagName('button');
+    // 为button元素绑定单击事件
+    obtn[0].onclick = function () {
+      // 获取用户输入的用户名和密码
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('pwd').value;
+      // 定义data对象，用于存储用户名和密码
+      var data = {
+        username: username,
+        password: password
+      };
+      var data = JSON.stringify(data);
+      // 创建Ajax对象
+      var xhr = new XMLHttpRequest();
+      // 调用Ajax的open()方法，初始化HTTP请求
+      xhr.open('POST', 'http://localhost:3000/login');
+      // 设置请求头
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      // onreadystatechange事件处理函数
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          // 接收服务器的响应数据
+          var data = JSON.parse(xhr.responseText);
+          alert(data.msg);
+        }
+      };
+      // 发送请求
+      xhr.send(data);
+    };
+  </script>  
+</body>
+</html>

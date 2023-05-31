@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = 'Hello World123';
+    var reg1 = /\d/g;
+    var reg2 = /\W/g;
+    console.log(str.match(reg1));     // 输出结果：(3) ["1", "2", "3"]
+    console.log(str.match(reg2));     // 输出结果：[" "]
+
+    var reg = /\^/g;
+    var reg1 = /\?/g;
+    var reg2 = new RegExp('\\.', 'g');
+    console.log('^a1b2'.match(reg));  // 输出结果：["^"]
+    console.log('a1?b2'.match(reg1)); // 输出结果：["?"]
+    console.log('a1.b2'.match(reg2)); // 输出结果：["."]
+  </script>
+</body>
+</html>

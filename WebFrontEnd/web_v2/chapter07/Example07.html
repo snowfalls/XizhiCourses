@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="myList"><li>苹果</li><li>橙子</li><li>橘子</li></ul>
+  <ul id="op"></ul>
+  <button>点我</button>
+  <script>
+    var btn = document.querySelector('button');
+    btn.onclick = function () {
+      var item = document.getElementById('myList').firstChild;
+      var cloneItem = item.cloneNode(true);
+      document.getElementById('op').appendChild(cloneItem);
+    };
+  </script>
+</body>
+</html>

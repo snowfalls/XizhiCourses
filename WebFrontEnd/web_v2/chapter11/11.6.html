@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <script>
+    $.get('http://localhost:3000/get', function (msg) {
+      console.log(msg);
+    });
+
+    $.post('http://localhost:3000/post', function (msg) {
+      console.log(msg);
+    }, 'json');
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://localhost:3000/get',
+      success: function (msg) {
+        console.log(msg);
+      }
+    });
+  </script>
+</body>
+</html>

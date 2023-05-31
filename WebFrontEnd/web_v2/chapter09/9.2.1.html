@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var reg = /^a/;
+    console.log(reg.test('apple'));     // 输出结果：true
+    console.log(reg.test('orange'));    // 输出结果：false
+    console.log(reg.test('melon'));     // 输出结果：false
+    console.log(reg.test('apricot'));   // 输出结果：true
+    console.log(reg.test('banana'));    // 输出结果：false
+
+    console.log(/^Happy day$/.test('Happy day')); // 输出结果：true
+    console.log(/^Sad day$/.test('Happy day'));   // 输出结果：false
+  </script>
+</body>
+</html>

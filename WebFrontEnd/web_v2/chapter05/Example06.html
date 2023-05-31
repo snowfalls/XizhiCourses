@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var score = [59, 66, 64, 80, 78, 90, 55, 37, 60, 52];
+    var failScore = [];                      // 创建用于保存不及格成绩的数组
+    for (var i = 0; i < score.length; i++) {
+      if (score[i] < 60) {                   // 判断成绩是否及格
+        failScore.push(score[i]);            // 将不及格的成绩放到failScore
+      }
+    }
+    console.log(failScore);
+    console.log('不及格的人数为：' + failScore.length);
+  </script>
+</body>
+</html>

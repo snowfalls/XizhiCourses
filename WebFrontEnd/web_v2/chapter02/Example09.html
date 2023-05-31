@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = '';
+    var level = prompt('请设置金字塔的层数');
+    // 获取输入的纯数字，其余情况皆转为NaN
+    level = parseInt(level) && Number(level);
+    // 判断用户输入的数据是否合法
+    if (isNaN(level)) {
+      alert('金字塔的层数必须是纯数字');
+    }
+    // 循环遍历金字塔的层数
+    for (var i = 1; i <= level; ++i) {
+       // 计算“*”前的空格并累加到str中
+      var blank = level - i;
+      for (var k = 0; k < blank; ++k) {
+        str += ' ';
+      }
+      // 计算“*”的数量并累加到str中
+      var star = i * 2 - 1;
+      for (var j = 0; j < star; ++j) {
+        str += '*';
+      }
+      // 换行
+      str += '\n';
+    }
+    console.log(str);
+  </script>  
+</body>
+</html>

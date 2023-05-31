@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>鱼香肉丝</li>
+    <li>宫保鸡丁</li>
+    <li>糖醋里脊</li>
+    <li>凉拌黄瓜</li>
+  </ul>
+  <script>
+    // 根据标签名获取元素
+    var lis = document.getElementsByTagName('li');
+    console.log(lis);
+    for (var i = 0; i < lis.length; i++) {
+      console.log(lis[i]);
+    }
+    console.log(Array.isArray(lis));
+  </script>
+</body>
+</html>

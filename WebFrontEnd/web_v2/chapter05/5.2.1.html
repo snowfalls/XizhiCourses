@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 创建一个空对象
+    var obj = {};
+    // 创建一个学生对象
+    var stu1 = {
+      name: '小明',              // name属性
+      age: 18,                  // age属性
+      sex: '男',                // sex属性
+      sayHello: function () {   // sayHello()方法
+        console.log('Hello');
+      }
+    };
+
+    // 第1种方式
+    console.log(stu1.name);       // 访问对象的属性，输出结果：小明
+    stu1.sayHello();              // 调用对象的方法，输出结果：Hello
+    // 第2种方式
+    console.log(stu1['age']);     // 访问对象的属性，输出结果：18
+    stu1['sayHello']();           // 调用对象的方法，输出结果：Hello
+
+    var stu2 = {
+      'name-age': '小明-18'
+    };
+    console.log(stu2['name-age']);    // 输出结果：小明-18
+
+
+    var obj = {};
+    obj.name = 'Jack';                // 为对象添加name属性
+    obj['age'] = 18;                  // 为对象添加age属性
+    obj.sayHello = function () {      // 为对象添加sayHello()方法
+      console.log('Hello');
+    };
+    obj['sing'] = function () {       // 为对象添加sing()方法
+      console.log('大海');
+    };
+    console.log(obj.name);            // 访问name属性，输出结果：Jack
+    console.log(obj.age);             // 访问age属性，输出结果：18
+    obj.sayHello();                   // 调用sayHello()方法，输出结果：Hello
+    obj.sing();                       // 调用sing()方法，输出结果：大海
+
+    var obj = {};                     // 创建一个空对象
+    console.log(obj.name);            // 输出结果：undefined
+  </script>
+</body>
+</html>

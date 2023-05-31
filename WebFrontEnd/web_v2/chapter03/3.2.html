@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var arr = new Array();                             // 创建空数组
+    var arr = new Array(3);                            // 创建包含3个空元素的数组
+    var arr = new Array('语文', '数学', '英语');        // 含有3个元素
+
+    // 在数组中保存各种常见的数据类型
+    var arr1 = new Array(123, 'abc', true, null, undefined);
+
+    // 在数组中保存数组
+    var arr2 = new Array(1, new Array(21, 22), 3);
+
+    var empty = [];                                     // []相当于new Array()
+    var arr = ['语文', '数学', '英语', '历史'];          // 含有4个元素
+
+    var weather = ['wind', 'fine',];                  // 相当于：new Array('wind', 'fine',)
+    var mood = ['sad', , , ,'happy'];                 // 控制台输出mood：(5) ["sad", empty × 3, "happy"]
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: cadetblue;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-left: 10px;
+    }
+    .change-border {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="change"></div>
+  <button class="btn">变成圆形</button>
+  <button class="btn">变回方形</button>
+  <script>
+    var box = document.getElementsByClassName('change');
+    var btns = document.getElementsByClassName('btn');
+    btns[0].onclick = function () {
+      box[0].classList.add('change-border')
+    };
+    btns[1].onclick = function () {
+      box[0].classList.remove('change-border')
+    };
+  </script>
+</body>
+<html>

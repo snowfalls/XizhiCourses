@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function recursion(num) {
+      if (num < 0) {
+        return '输入的数字不能小于0';
+      } else if (num == 0) {
+        return 0;
+      } else if (num == 1) {
+        return 1;
+      } else if (num > 1) {
+        return recursion(num - 1) + recursion(num - 2);
+      }
+    }
+    console.log(recursion(10));
+  </script>
+</body>
+</html>

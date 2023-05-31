@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .mouse {
+      position: absolute;
+      background: #ffd965;
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div id="div" class="mouse"></div>
+  <script>
+    var div = document.getElementById('div');
+    document.onclick = function (event) {
+      var e = event || window.event;
+      var pageX = e.pageX || e.clientX + document.documentElement.scrollLeft;
+      var pageY = e.pageY || e.clientY + document.documentElement.scrollTop;
+      // 计算div的显示位置
+      var targetX = pageX - div.offsetWidth / 2;
+      var targetY = pageY - div.offsetHeight / 2;
+      // 设置div的位置并让它显示
+      div.style.display = 'block';
+      div.style.left = targetX + 'px';
+      div.style.top = targetY + 'px';
+    };
+  </script>
+</body>
+</html>

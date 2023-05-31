@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sum() {
+      console.log(arguments.length);  // 输出实参个数
+      console.log(arguments);         // 输出arguments对象
+      var result = 0;
+      for (i = 0; i < arguments.length; i++) {
+        result = result + arguments[i];
+      }
+      console.log(result);
+    }
+    sum(1, 2, 3, 4, 5);
+  </script>
+</body>
+</html>

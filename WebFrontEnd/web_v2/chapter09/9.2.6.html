@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 示例1
+    var reg1 = /happy|te/;        // 可匹配的结果：happy、te
+    console.log('happy'.match(reg1));
+    console.log('te'.match(reg1));
+
+    var reg2 = /ha(ppy|te)/;      // 可匹配的结果：happy、hate
+    console.log('happy'.match(reg2));
+    console.log('hate'.match(reg2));
+
+    // 示例2
+    var reg1 = /abc{2}/;          // 可匹配的结果：abcc
+    console.log('abcc'.match(reg1));
+
+    var reg2 = /a(bc){2}/;        // 可匹配的结果：abcbc
+    console.log('abcbc'.match(reg2));
+
+    // 捕获内容
+    var reg = /Su(nny)/;
+    console.log('Sunnyday'.match(reg));
+
+    // 非捕获匹配
+    var reg = /Su(?:nny)/;
+    console.log('Sunnyday'.match(reg));
+
+    // 反向引用
+    var str = '13335 12345 56668';
+    var reg = /(\d)\1\1/g;
+    var match = str.match(reg);
+    console.log(match);           // 输出结果为：(2) ["333", "666"]
+
+    // 演示4种零宽断言
+    var reg1 = /Countr(?=y)/g;    // 先行断言
+    var reg2 = /Countr(?!y)/g;    // 先行否定断言
+    var reg3 = /(?<=A)dmin/g;     // 后行断言
+    var reg4 = /(?<!A)dmin/g;     // 后行否定断言
+    // 执行匹配
+    console.log('Country'.match(reg1));   // 输出结果：["Countr"]
+    console.log('Country'.match(reg2));   // 输出结果：null
+    console.log('Admin'.match(reg3));     // 输出结果：["dmin"]
+    console.log('Bdmin'.match(reg4));     // 输出结果：["dmin"]
+  </script>
+</body>
+</html>

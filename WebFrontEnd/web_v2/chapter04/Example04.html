@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      var a = 'one';          // 全局变量
+      function test() {
+        var a = 'two';        // 局部变量
+        console.log(a);
+      }
+      test();
+      console.log(a);
+  </script>
+</body>
+</html>

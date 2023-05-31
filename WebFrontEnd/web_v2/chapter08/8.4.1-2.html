@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function fn() {
+      console.log('JavaScript');
+    }
+    // 设置定时器时，保存定时器id
+    var timer = setTimeout(fn, 3000);
+    // 清除定时器时，传入要清楚的定时器id
+    clearTimeout(timer);
+  </script>
+</body>
+</html>

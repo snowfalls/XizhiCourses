@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+  <style>
+    body { height: 1000px; }
+    #container { width: 600px; background-color: gray; margin: 0 auto; }
+    nav { height: 200px; background-color: gray; }
+    article { height: 500px; background-color: burlywood; }
+    footer { height: 300px; background-color: cadetblue; }
+    button { position: fixed; right: 30px; bottom: 10px; display: none; }
+  </style>  
+</head>
+<body>
+  <div id="container">
+    <nav></nav>
+    <article></article>
+    <footer></footer>
+  </div>
+  <button>返回顶部</button>
+  <script>
+    // 控制返回顶部按钮的显示和隐藏
+    var boxTop = $('#container').offset().top;
+    $(window).scroll(function () {
+      if ($(document).scrollTop() >= boxTop) {
+        $('button').fadeIn();
+      } else {
+        $('button').fadeOut();
+      }
+    });
+    // 注册单击事件
+    $('button').click(function () {
+      $('body,html').stop().animate({
+        scrollTop: 0
+      });
+    });
+  </script>
+</body>
+</html>

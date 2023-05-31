@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 传入普通函数
+    setTimeout(fn, 3000);
+    function fn() {
+      console.log('JavaScript');
+    }
+    // 传入匿名函数
+    setTimeout(function () {
+      alert('JavaScript');
+    }, 3000);
+    // 传入字符串代码
+    setTimeout('alert("JavaScript");', 3000);
+  </script>
+</body>
+</html>

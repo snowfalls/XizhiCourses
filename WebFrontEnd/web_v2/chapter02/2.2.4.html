@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(Boolean(''));           // 输出结果：false
+    console.log(Boolean(0));            // 输出结果：false
+    console.log(Boolean(NaN));          // 输出结果：false
+    console.log(Boolean(null));         // 输出结果：false
+    console.log(Boolean(undefined));    // 输出结果：false
+    console.log(Boolean(2));            // 输出结果：true
+    console.log(Boolean('2'));          // 输出结果：true
+
+    console.log(parseInt('123.1'));     // 输出结果：123
+    console.log(parseInt('0xF'));       // 输出结果：15
+    console.log(parseInt('F'));         // 输出结果：NaN
+    console.log(parseInt('F', 16));     // 输出结果：15
+    console.log(parseFloat('123.1'));   // 输出结果：123.1
+    console.log(parseFloat('314e-2'));  // 输出结果：3.14
+    console.log(Number('123.1'));       // 输出结果：123.1
+    console.log(Number('123.a'));       // 输出结果：NaN
+
+    var num1 = 12, num2 = 26;
+    console.log(String(num1));              // 输出结果：12
+    console.log(num1.toString());           // 输出结果：12
+    console.log(num2.toString(2));          // 输出结果：11010
+  </script>
+</body>
+</html>

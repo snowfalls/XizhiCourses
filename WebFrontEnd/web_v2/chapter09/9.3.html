@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log('abbbc'.match(/b/g));           // 输出结果：(3) ["b", "b", "b"]
+    console.log('Apple'.match(/apple/gi));      // 输出结果：["Apple"]
+    console.log('Hi Li\n Ming'.match(/Li$/gm)); // 输出结果：["Li"]
+    console.log('fat\ndog'.match(/^f.*$/s));    // 输出结果：["fat↵dog"]
+  </script>
+</body>
+</html>

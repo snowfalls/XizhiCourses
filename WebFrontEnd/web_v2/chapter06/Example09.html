@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ol>
+    <li id="first">张三</li>
+    <li id="second"><span>李四</span></li>
+    <li id="third">王五</li>
+    <li>小明</li>
+    <li>小红</li>
+  </ol>
+  <script>
+    var firstOne = document.getElementById('first');
+    // 通过innerText属性获取元素内容
+    console.log(firstOne.innerText);
+    var secondOne = document.getElementById('second');
+    // 通过innerText属性获取元素内容
+    console.log(secondOne.innerText);
+    var thirdOne = document.getElementById('third')
+    // 通过innerText属性设置元素内容
+    thirdOne.innerText = '小兰';
+  </script>
+</body>
+</html>

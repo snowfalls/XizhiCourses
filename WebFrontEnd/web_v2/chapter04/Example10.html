@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 用户输入年份，输出当前年份2月份的天数
+    function feb() {
+      var year = prompt('请输入年份：');
+      if (leapYear (year)) {
+        alert('当前年份是闰年，2月份有29天');
+      } else {
+        alert('当前年份是平年，2月份有28天');
+      }
+    }
+    feb();
+    // 判断是否为闰年的函数
+    function leapYear(year1) {
+      var flag = false;
+      if (year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400 == 0) {
+        flag = true;
+      }
+      return flag;
+    }
+  </script>  
+</body>
+</html>

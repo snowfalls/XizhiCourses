@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  <script>
+    // 将li元素追加到ul元素中
+    $('ul').append('<li>3</li>');
+    // 追加ul元素的兄弟元素ul
+    $('ul').after('<ul><li>一</li><li>二</li><li>三</li></ul>');
+  </script>
+</body>
+</html>

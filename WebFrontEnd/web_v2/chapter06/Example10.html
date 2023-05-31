@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Example10</title>
+  <style>
+    .nav {
+      background-color: antiquewhite;
+      width: 500px;
+      height: 30px;
+      margin: 20px auto;
+    }
+    .item {
+      width: 125px;
+      float: left;
+      line-height: 30px;
+      text-align: center;
+    }
+    #hide {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="item">首页</div>
+    <div class="item">个人主页</div>
+    <div class="item">设置</div>
+    <div class="item" id="hide">隐藏内容</div>
+  </div>
+  <script>
+    var hideText = document.getElementById('hide');
+    // 通过textContent属性返回获取到的元素的内容
+    console.log(hideText.textContent);
+    // 通过innerText属性返回获取到的元素的内容
+    console.log(hideText.innerText);
+    // 通过textContent属性设置获取到的元素的内容
+    hideText.textContent = '特定时刻显示';
+    // 通过textContent属性返回元素修改过的内容
+    console.log(hideText.textContent);
+  </script>
+</body>
+</html>

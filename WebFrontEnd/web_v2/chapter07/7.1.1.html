@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(Node.ELEMENT_NODE);
+    console.log(Node.TEXT_NODE);
+    console.log(Node.COMMENT_NODE);
+    console.log(Node.DOCUMENT_NODE);
+    console.log(Node.DOCUMENT_TYPE_NODE);
+
+    var node = document.body;      // 获取body节点
+    console.log(node.nodeName);    // 获取节点名称，输出结果：BODY
+    console.log(node.nodeValue);   // 获取节点值，输出结果：null
+    console.log(node.nodeType);    // 获取节点类型，输出结果：1
+  </script>
+</body>
+</html>

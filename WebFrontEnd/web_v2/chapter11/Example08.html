@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+  <style>
+    .first { background-color: black; }
+    .second { width: 200px; height: 100px; border: 2px solid red; }
+    .third { position: absolute; left: 50px; }
+  </style>
+</head>
+<body>
+  <div>元素属性操作</div>
+  <script>
+    // 设置元素的自定义属性
+    $('div').attr('index', 1);
+    $('div').attr('data-index', 3);
+    // 获取元素的自定义属性
+    console.log($('div').attr('data-index'));
+    // 删除元素的自定义属性
+    $('div').removeAttr('index');
+  </script>
+</body>
+</html>

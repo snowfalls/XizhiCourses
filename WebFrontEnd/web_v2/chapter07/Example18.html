@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form id="form">
+    <label>用户名：<input id="user" type="text"></label>
+    <input type="submit" value="提交">
+  </form>
+  <script>
+    var form = document.getElementById('form');
+    var user = document.getElementById('user');
+    form.onsubmit = function () {
+      if (user.value == '') {
+        alert('请填写用户名！');
+        return false;
+      }
+    };
+  </script>
+</body>
+</html>

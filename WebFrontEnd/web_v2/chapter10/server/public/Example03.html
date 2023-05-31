@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var xhr = new XMLHttpRequest();
+    console.log(xhr.readyState);      // 获取Ajax状态值，结果为0
+    xhr.open('get', 'http://localhost:3000/get');
+    console.log(xhr.readyState);      // 获取Ajax状态值，结果为1
+    xhr.onload = function () {
+      console.log(xhr.readyState);    // 获取Ajax状态值，结果为4
+      console.log(xhr.responseText);
+    };
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);    // 获取Ajax状态值
+      if (xhr.readyState === 4) {
+        console.log(xhr.responseText);
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>

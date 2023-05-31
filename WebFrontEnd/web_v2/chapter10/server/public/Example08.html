@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', 'http://localhost:3000/cors');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        console.log(xhr.responseText);
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>

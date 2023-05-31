@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      var date = new Date();
+      // 设置年、月、日
+      date.setFullYear(2022);
+      date.setMonth(7 - 1);
+      date.setDate(1);
+      // 获取年、月、日
+      var year = date.getFullYear();
+      var month = date.getMonth();
+      var day = date.getDate();
+      // 输出结果
+      console.log(year + '年' + (month + 1) + '月' + day + '日');
+  </script>
+</body>
+</html>

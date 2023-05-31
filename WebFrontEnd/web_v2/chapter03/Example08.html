@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var stu = [
+      [88, 70, 60, 60],     // 第1个学生的成绩数组
+      [66, 46, 60, 80],     // 第2个学生的成绩数组
+      [100, 80, 112, 90]    // 第3个学生的成绩数组
+    ];
+    for (var i = 0, sum; i < stu.length; i++) {
+      sum = 0;
+      for (var j = 0; j < stu[i].length; j++) {
+        sum += stu[i][j];
+      }
+      console.log('第' + (i + 1) + '位学生的总成绩为' + sum);
+    }
+  </script>
+</body>
+</html>

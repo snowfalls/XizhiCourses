@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="signal.css">
+</head>
+<body>
+  <div class="box">
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div class="second" id="second"></div>
+  </div>
+  <script>
+    var signal = {
+      red: {              // 红灯对象
+        el: document.getElementById('red'),
+        duration: 30,
+        style: ['red', 'off', 'off'],
+      },
+      yellow: {           // 黄灯对象
+        el: document.getElementById('yellow'),
+        duration: 5,
+        style: ['off', 'yellow', 'off'],
+      },
+      green: {            // 绿灯对象
+        el: document.getElementById('green'),
+        duration: 35,
+        style: ['off', 'off', 'green'],
+      },
+      second: {           // 倒计时对象
+        el: document.getElementById('second')
+      },
+      change: function (next) {   // 切换下一个灯
+        this.red.el.className = next.style[0];
+        this.yellow.el.className = next.style[1];
+        this.green.el.className = next.style[2];
+      },
+      setNum: function (num) {    // 设置倒计时数值
+        this.second.el.innerHTML = num < 10 ? '0' + num :num;
+      }
+    };
+    // 为每个灯对象设置下一个灯对象
+    signal.red.next = signal.green;
+    signal.green.next = signal.yellow;
+    signal.yellow.next = signal.red;
+    // 设置页面刚打开时显示的灯和倒计时
+    var current = signal.green;
+    var timeout = current.duration;
+    signal.change(current);
+    signal.setNum(timeout);
+    // 设置1秒钟更新一次倒计时
+    setInterval(function () {
+      // 如果倒计时为0，切换下一个灯
+      if (--timeout <= 0) {
+        current = current.next;
+        timeout = current.duration;
+        signal.change(current);
+      }
+      signal.setNum(timeout);
+    }, 1000);
+  </script>  
+</body>
+</html>

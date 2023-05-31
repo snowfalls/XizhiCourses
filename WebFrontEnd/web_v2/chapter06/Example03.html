@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <p>请选择你最喜欢的水果(多选)</p>
+  <input type="checkbox" name="fruit" value="苹果">苹果
+  <input type="checkbox" name="fruit" value="香蕉">香蕉
+  <input type="checkbox" name="fruit" value="西瓜">西瓜
+  <script>
+    var fruits = document.getElementsByName('fruit');
+    // 输出获取到的集合
+    console.log(fruits);
+    // 通过索引的方式访问集合中的第2个元素并输出
+    console.log(fruits[1]);
+  </script>
+</body>
+</html>

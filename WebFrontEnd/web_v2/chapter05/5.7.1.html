@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var arr = ['星期一', '星期二', '星期三', '星期四', '星期五'];
+    console.log(arr.push('星期六'));            // 输出结果：6
+    console.log(arr.unshift('星期日'));         // 输出结果：7
+    console.log(arr.pop());                    // 输出结果：星期六
+    console.log(arr.shift());                  // 输出结果：星期日
+
+    var arr = ['sky', 'wind', 'snow', 'sun'];
+    arr.splice(2, 2);             
+    console.log(arr);        // 输出结果：(2) ['sky', 'wind']
+    arr.splice(1, 1, 'snow');     
+    console.log(arr);        // 输出结果：(2) ['sky', 'snow']
+    arr.splice(1, 0, 'hail', 'sun');
+    console.log(arr);        // 输出结果：(4) ['sky', 'hail', 'sun', 'snow']
+
+    // 反转数组
+    var arr = [10, 2, 18, 4];
+    arr.reverse();
+    console.log(arr);    // 输出结果：(4) [4, 18, 2, 10]
+    // 升序排序
+    arr.sort(function (a, b) {
+      return a - b;
+    });
+    console.log(arr);    // 输出结果：(4) [2, 4, 10, 18]
+    // 降序排序
+    arr.sort(function (a, b) {
+      return b - a;
+    });
+    console.log(arr);    // 输出结果：(4) [18, 10, 4, 2]
+
+    var arr = ['red', 'green', 'blue', 'pink', 'blue'];
+    console.log(arr.indexOf('blue'));        // 输出结果：2
+    console.log(arr.lastIndexOf('blue'));    // 输出结果：4
+
+    // 使用toString()
+    var arr = ['a', 'b', 'c'];
+    console.log(arr.toString());       // 输出结果：a,b,c
+    // 使用join()
+    console.log(arr.join());           // 输出结果：a,b,c
+    console.log(arr.join(''));         // 输出结果：abc
+    console.log(arr.join('-'));        // 输出结果：a-b-c
+
+    // fill()的使用
+    console.log([0, 1, 2].fill(4));            // 输出结果：(3) [4, 4, 4]
+    console.log([0, 1, 2].fill(4, 1));         // 输出结果：(3) [0, 4, 4]
+    console.log([0, 1, 2].fill(4, 1, 2));      // 输出结果：(3) [0, 4, 2]
+    // slice()的使用
+    console.log([0, 1, 2].slice());            // 输出结果：(3) [0, 1, 2]
+    console.log([0, 1, 2].slice(1));           // 输出结果：(2) [1, 2]
+    console.log([0, 1, 2].slice(1, 2));        // 输出结果：[1]
+    // concat()的使用
+    console.log([0, 1, 2].concat(3));          // 输出结果：(4) [0, 1, 2, 3]
+    console.log([0, 1, 2].concat([3, 4]));     // 输出结果：(5) [0, 1, 2, 3, 4]
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>我是li中的文本1</li>
+    <li>我是li中的文本2</li>
+    <li>我是li中的文本3</li>
+  </ul>
+  <script>
+    var ul = document.querySelector('ul');
+    // 获取当前节点的首个子节点
+    console.log(ul.firstChild);
+    // 获取当前节点的首个子元素节点
+    console.log(ul.firstElementChild);
+    // 获取当前节点的所有子节点的集合
+    console.log(ul.childNodes);
+    // 获取当前节点的所有子元素节点的集合
+    console.log(ul.children);
+  </script>
+</body>
+</html>

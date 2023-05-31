@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function Person(name) {
+      // 添加实例成员
+      this.name = name;
+      this.say = function () {
+        console.log('Hello');
+      };
+    }
+    // 添加静态成员
+    Person.class = '102班';
+    Person.run = function () {
+      console.log('run');
+    };
+    // 使用静态成员
+    console.log(Person.class);        // 输出结果：102班
+    Person.run();                     // 输出结果：run
+    // 使用实例成员
+    var p1 = new Person('小明');
+    console.log(p1.name);             // 输出结果：小明
+    p1.say();                         // 输出结果：Hello
+  </script>
+</body>
+</html>

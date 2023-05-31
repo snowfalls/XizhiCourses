@@ -1,0 +1,43 @@
+body {
+  background: #ddd;
+}
+
+.box {
+  background: #fff;
+  padding: 20px 30px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  background: #3388ff;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ipt {
+  width: 260px;
+  padding: 4px 2px;
+}
+
+#tips {
+  width: 440px;
+  height: 30px;
+  margin: 5px auto;
+  background: #fff;
+  color: red;
+  border: 1px solid #ccc;
+  display: none;
+  line-height: 30px;
+  padding-left: 20px;
+  font-size: 13px;
+}

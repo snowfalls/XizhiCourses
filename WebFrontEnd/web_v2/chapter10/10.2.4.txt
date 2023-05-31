@@ -1,0 +1,6 @@
+
+npm init -y
+
+npm install express@4.17.1 –-save
+
+npm list express

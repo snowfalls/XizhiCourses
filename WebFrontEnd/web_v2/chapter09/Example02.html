@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div>过滤前的内容：<br>
+    <textarea id="before" cols="30" rows="5"></textarea>
+  </div>
+  <button id="btn">过滤</button>
+  <div>过滤后的内容：<br>
+    <textarea id="after" cols="30" rows="5"></textarea>
+  </div>
+  <script>
+    document.getElementById('btn').onclick = function () {
+      var str = document.getElementById('before').value;
+      var reg = /(admin)|(manager)/gi;
+      var newStr = str.replace(reg, '*');
+      document.getElementById('after').value = newStr;
+    };
+  </script>
+</body>
+</html>

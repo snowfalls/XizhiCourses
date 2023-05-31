@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script>
+    $('div').mouseover(function () {
+      // 创建自定义动画
+      $('div').animate({ left: '+=100' }, 500);
+    });
+
+    $('div').stop();            // 停止当前动画，继续下一个动画
+    $('div').stop(true);        // 清除动画队列中所有动画
+    $('div').stop(true, true);  // 清除动画队列中所有动画，允许立即完成当前动画
+  </script>  
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function cooking(flavour) {
+      // 厨师做菜
+      var food = '鱼香肉丝';
+      food = flavour(food);
+      return food;
+    }
+    var food = cooking(function (food) {
+      return food += '特辣';
+    });
+    console.log(food);
+  </script>
+</body>
+</html>

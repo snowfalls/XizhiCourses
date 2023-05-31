@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="demo" index="1"></div>
+  <script>
+    var div = document.querySelector('div'); 
+    console.log(div.index); // 无法通过这种方式获取自定义属性
+    console.log(div.getAttribute('index'));
+    console.log(div.getAttribute('id'));
+  </script>
+</body>
+<html>

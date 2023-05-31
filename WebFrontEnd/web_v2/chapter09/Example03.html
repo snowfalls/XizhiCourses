@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    label { width: 80px; display: inline-block; margin-bottom: 20px; }
+    input { width: 300px; padding: 5px; }
+    .green { color: green; }
+    .red { color: red; }
+  </style>  
+</head>
+<body>
+  <form>
+    <label>用户名：</label>
+    <input type="text" name="username" placeholder="长度3~10位，英文大小写字母"> <span></span><br>
+    <label>密码：</label>
+    <input type="password" name="psw" placeholder="长度6~20位，英文大小写字母、数字、下画线"> <span></span><br>
+    <label>确认密码：</label>
+    <input type="password" name="conf" placeholder="请再次输入密码"> <span></span><br>
+    <label>手机号：</label>
+    <input type="text" name="tell" placeholder="以13、15、16、17、18、19开头的11位数字"> <span></span><br>
+  </form>
+  <script>
+    // 验证用户名、密码、手机号是否合法
+    function checkItem(obj, name, reg) {
+      var osp = obj.nextElementSibling;
+      obj.onblur = function () {
+        if (reg.test(obj.value)) {
+          osp.innerHTML = '恭喜您' + name + '合法!';
+          osp.className = 'green';
+        } else {
+          osp.innerHTML = '您输入的' + name + '不合法，请根据提示重新输入!';
+          osp.className = 'red';
+        }
+      };
+    }
+    // 验证输入的两次密码是否一致
+    function checkPwd(obj, previous) {
+      obj.onblur = function () {
+        if (obj.value == previous.value) {
+          obj.nextElementSibling.innerHTML = '密码正确!';
+          obj.nextElementSibling.className = 'green';
+        } else {
+          obj.nextElementSibling.innerHTML = '两次密码不一致，请重新输入!';
+          obj.nextElementSibling.className = 'red';
+        }
+      }
+    }
+    // 获取所有input元素
+    var oinp = document.getElementsByTagName('input');
+    // 调用checkItem()函数
+    checkItem(oinp[0], '用户名', /^[a-zA-Z]{3,10}$/);
+    checkItem(oinp[1], '密码', /^\w{6,20}$/);
+    checkItem(oinp[3], '手机号', /^1[356789]\d{9}$/);
+    //调用checkPwd()函数
+    checkPwd(oinp[2], oinp[1]);
+  </script>  
+</body>
+</html>
